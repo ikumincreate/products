@@ -1,0 +1,246 @@
+/* PC、スマホ共通スタイル */
+/* 横幅設定 */
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+全画像共通
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* ヘッダー */
+header {
+  background-color: #0f2350;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* メイン画像 */
+#main {
+  text-align:center;
+}
+
+/* 各項目のタイトルバー */
+  .title {
+  background-color: #0f2350;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px auto 20px auto;
+}
+
+/* メイン画像下のセールスポイント */
+#point {
+  color: #F1A444;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+/* タイトル文字 */
+.title {
+  color: #f0f8ff;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* レンタルプラン */
+.plan_name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.plan {
+  margin: 20px auto ;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ce2222;
+}
+
+/* 予約フォーム */
+#reservation {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#reservation > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.reserve_heading {
+  width: 240px;
+  align-self: center;
+}
+
+/* 見出しのラベル */
+.reserve_label {
+  font-weight: bold;
+}
+
+/* 必須 */
+.reserve_span {
+  font-size: 10px;;
+  color: #ce2222;
+  margin: 0 0 0 20px;
+}
+
+/* テキストボックス */
+.reserve_textbox {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #6D7E9F;
+  border-bottom-style: solid;
+  background-color: #F5F5F5;
+  width: 400px;
+  height: 56px;
+}
+
+/* セレクトボックス */
+select {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #6D7E9F;
+  border-bottom-style: solid;
+  background-color: #F5F5F5;
+  width: 400px;
+  height: 56px;
+}
+
+/* お問い合わせ・ご要望のテキストエリア */
+.reserve_textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #6D7E9F;
+  border-bottom-style: solid;
+  background-color: #F5F5F5;
+  width: 400px;
+  height: 200px;
+}
+
+/* コピーライト */
+#copy {
+  color: #f0f8ff;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* PC画面表示 */
+/* ナビゲーションメニュー */
+#nav-pc {
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: right;
+  width: 100%;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f8ff;
+  font-size: 20px;
+  margin: auto 20px;
+}
+
+/* レンタルプラン */
+.plans {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+}
+
+/* 当日の流れ */
+.flow_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ギャラリー */
+.galleries {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 20px auto 20px auto;
+}
+
+/* フッター */
+footer {
+  background-color: #0f2350;
+}
+
+#access {
+
+}
+
+.info {
+
+}
+
+#shop_name {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.shop_info {
+  color: aliceblue;
+}
+
+
+
+
+/* スマホ画面表示 */
+@media screen and (max-width: 768px) {
+  /* レンタルプラン */
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+  }
+  
+  .plan {
+    margin: 20px auto 20px auto;
+  }
+
+  /* ギャラリー */
+  .galleries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+  }
+  
+  .gallery {
+    margin: 20px auto 20px auto;
+  }
+
+  /* アクセス */
+  #access {
+
+  }
+  
+  .info {
+  
+  }
+}

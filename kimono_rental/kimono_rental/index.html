@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="京都にある着物レンタルサービス店のサイトです。" />
+  <title>着物レンタル 小島</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- ナビゲーションメニュー -->
+  <header>
+    <a href="index.html" id="logo"><img src="img/logo.png" alt="トップページに戻る"></a>
+    <nav id="nav-pc">
+      <div class="menu">
+        <a href="index.html#rental_plan">レンタルプラン</a>
+        <a href="index.html#rental_flow">当日の流れ</a>
+        <a href="index.html#reservation">予約</a>
+        <a href="index.html#gallery">ギャラリー</a>
+        <a href="index.html#access">アクセス</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- メイン画像 -->
+    <div id="main">
+      <img src="img/main.png" alt="着物を着た女性の後ろ姿">
+    </div>
+
+    <p id="point">古典的な和柄から、華やかなモダン柄まで豊富な着物を取り揃えています</p>
+
+    <!-- レンタルプラン -->
+    <section id="rental_plan">
+      <h1 class="title">レンタルプラン</h1>
+      <div class="plans">
+        <div class="plan">
+          <img src="img/plan1.jpg" alt="">
+          <p class="plan_name">フルセットプラン</p>
+          <p class="price">４,９９９円</p>
+          <p>
+            ・着物レンタル<br>
+            ・着付け<br>
+            ・ヘアセット<br>
+          </p>
+        </div>
+        <div class="plan">
+          <img src="img/plan2.jpg" alt="">
+          <p class="plan_name">シンプルプラン</p>
+          <p class="price">３,９９９円</p>
+          <p>
+            ・着物レンタル<br>
+            ・着付け<br>
+          </p>
+        </div>
+        <div class="plan">
+          <img src="img/plan3.jpg" alt="">
+          <p class="plan_name">浴衣プラン</p>
+          <p class="price">３,９９９円</p>
+          <p>
+            ＜7～8月限定＞<br>
+            ・浴衣レンタル<br>
+            ・着付け<br>
+          </p>
+        </div>
+        <div class="plan">
+          <img src="img/plan4.jpg" alt="">
+          <p class="plan_name">写真撮影プラン</p>
+          <p class="price">７,９９９円</p>
+          <p>
+            ・着物レンタル<br>
+            ・着付け<br>
+            ・ヘアセット<br>
+            ・写真撮影<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- レンタルの流れ -->
+    <section id="rental_flow">
+      <h1 class="title">レンタルの流れ</h1>
+      <div class="the_day">
+        <div class="flow">
+          <p class="flow_title">ご予約</p>
+          <p>
+            下記のフォームからお申込みをしてください。<br>
+            ご予約完了後、メールにて教らせいたします。
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">ご来店</p>
+          <p>
+            予約時間の５分前までにお店にお越しください。<br>
+            万が一ご予約時間に遅れる際は、お電話にてご連絡いただきますよう、よろしくお願いいたします。<br>
+            <a href="index.html#access">京都駅からのアクセスはこちら</a>
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">着物選び</p>
+          <p>
+            お好きな着物と帯をお選びください。
+            コーディネートにお悩みの場合は、お気軽にスタッフにお声掛けください。
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">着付</p>
+          <p>
+            プロによる着付けをさせていただきます。<br>
+            所要時間目安：４０分<br>
+            （ヘアセットを含むプランを選択の場合、別途３０分ほどお時間をいただきます）
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">お支払い</p>
+          <p>
+            料金のお支払いは現金・クレジット決済のいずれかとなります。
+
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">ご出発</p>
+          <p>
+            お荷物は当店にてお預かりいたしますので、
+          </p>
+        </div>
+        <div class="flow">
+          <p class="flow_title">ご返却</p>
+          <p>
+            当日返却の場合は、お着替えのお時間もありますので、１９時３０分までに店舗へご来店ください。<br>
+            翌日返却の場合は１２時までにご来店ください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 予約フォーム -->
+    <section id="reservation">
+      <h1 class="title">予約</h1>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="honeypot" style="display:none">
+        <!-- STATIC FORMSのアクセスキー -->
+        <input type="hidden" name="accessKey" value="3b613370-7d6a-4ee6-94cb-7e8d8096df7c">
+        <!--メールのタイトル-->
+        <input type="hidden" name="subject" value="お問い合わせフォーム" />
+        <!--送信先のメールアドレスをvalueに設定する-->
+        <input type="hidden" name="replyTo" value="ikumi.kt.ti@gmail.com">
+        <!--redirectToのURLは公開後のURLへリンクする-->
+        <input type="hidden" name="redirectTo" value="">
+        <div>
+          <div class="reserve_heading">
+            <label>お名前<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <input type="text" placeholder="名前を入力してください" class="reserve_textbox">
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>着付人数<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <input type="text" placeholder="例：2人" class="reserve_textbox">
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>希望日<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <input type="text" placeholder="例：2023年12月1日" class="reserve_textbox">
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>希望時間（第一希望）<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <select> 
+            <option>　９：００～</option>
+            <option>１０：００～</option>
+            <option>１１：００～</option>
+            <option>１２：００～</option>
+            <option>１３：００～</option>
+            <option>１４：００～</option>
+            <option>１５：００～</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>希望時間（第二希望）<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <select>           
+            <option>　９：００～</option>
+            <option>１０：００～</option>
+            <option>１１：００～</option>
+            <option>１２：００～</option>
+            <option>１３：００～</option>
+            <option>１４：００～</option>
+            <option>１５：００～</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>希望プラン<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <select> 
+            <option>フルセットプラン ４,９９９円</option>
+            <option>シンプルプラン ３,９９９円</option>
+            <option>浴衣プラン ３,９９９円</option>
+            <option>写真撮影プラン ７,９９９円</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>お電話番号</label>
+          </div>
+
+          <input type="text" placeholder="例：000-0000-0000" class="reserve_textbox">
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>メールアドレス<span class="reserve_span">＊必須</span></label>
+          </div>
+
+          <input type="text" placeholder="例：kimono.kojima@example.jp" class="reserve_textbox">
+        </div>
+
+        <div>
+          <div class="reserve_heading">
+            <label>お問い合わせ・ご要望</label>
+          </div>
+
+          <textarea class="reserve_textarea"></textarea>
+        </div>
+
+        <input type="submit" value="送信する">
+      </form>
+      </section> 
+
+    <!-- ギャラリー -->
+    <section id="gallery">
+      <h1 class="title">ギャラリー</h1>
+      <div class="galleries">
+        <div class="gallery">
+          <img src="img/gallery1.jpg" alt="お祈りする女性">
+        </div>
+        <div class="gallery">
+          <img src="img/gallery2.jpg" alt="背を向けた女性">
+        </div>
+        <div class="gallery">
+          <img src="img/gallery3.jpg" alt="チェック柄の着物を着た2人の女性">
+        </div>
+        <div class="gallery">
+          <img src="img/gallery4.jpg" alt="着物を着たカップル">
+        </div>
+        <div class="gallery">
+          <img src="img/gallery5.jpg" alt="淡い着物を着た女性">
+        </div>
+        <div class="gallery">
+          <img src="img/gallery6.jpg" alt="おみくじを結んでお祈りする女性">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- アクセス -->
+    <section id="access">
+      <div class="info">
+        <p id="shop_name">着物レンタル　小島</p>
+        <p class="shop_info">住所：〒600-8216 京都府京都市下京区東塩小路町７２１−１</p>
+        <p class="shop_info">電話：000-000-0000</p>
+        <p class="shop_info">営業時間：9:00～20:00</p>
+        <p class="shop_info">instagram：@kimonokojima</p>
+      </div>
+      <div class="info">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d817.1936448024471!2d135.75875816679297!3d34.98731071871799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109a325dedcab%3A0x1a53afeb36fd9975!2z5Lqs6YO944K_44Ov44O844OT44Or!5e0!3m2!1sja!2sjp!4v1698996760218!5m2!1sja!2sjp"
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <p id="copy">&copy; kimonorental KOJIMA. All rights reserved.</p>
+  </footer>
+</body>
+
+
+</html>
+
