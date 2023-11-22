@@ -27,11 +27,11 @@
     </div>
     <div class="innner">
       <nav id="nav_pc">
-        <a href="index.html#rental_plan">レンタルプラン</a>
-        <a href="index.html#rental_flow">レンタルの流れ</a>
-        <a href="index.html#reservation">ご予約</a>
-        <a href="index.html#gallery">ギャラリー</a>
-        <a href="index.html#access">アクセス</a>
+        <a href="index.php#rental_plan">レンタルプラン</a>
+        <a href="index.php#rental_flow">レンタルの流れ</a>
+        <a href="index.php#reservation">ご予約</a>
+        <a href="index.php#gallery">ギャラリー</a>
+        <a href="index.php#access">アクセス</a>
       </nav>
   </div>
 
@@ -39,18 +39,18 @@
   <img id="menu_sp" src="img/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav_sp').style.display = 'block'">
   <nav id="nav_sp">
     <img id="close" src="img/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav_sp').style.display = 'none'">
-    <a id="logo_sp" href="index.html" onclick="document.getElementById('nav_sp').style.display = 'none'">
+    <a id="logo_sp" href="index.php" onclick="document.getElementById('nav_sp').style.display = 'none'">
       <img src="img/logo.png" alt="トップページに戻る"></a>
 
-    <a class="menu" href="index.html#rental_plan"
+    <a class="menu" href="index.php#rental_plan"
       onclick="document.getElementById('nav_sp').style.display = 'none'">レンタルプラン</a>
-    <a class="menu" href="index.html#rental_flow"
+    <a class="menu" href="index.php#rental_flow"
       onclick="document.getElementById('nav_sp').style.display = 'none'">レンタルの流れ</a>
-    <a class="menu" href="index.html#reservation"
+    <a class="menu" href="index.php#reservation"
       onclick="document.getElementById('nav_sp').style.display = 'none'">ご予約</a>
-    <a class="menu" href="index.html#gallery"
+    <a class="menu" href="index.php#gallery"
       onclick="document.getElementById('nav_sp').style.display = 'none'">ギャラリー</a>
-    <a class="menu" href="index.html#access"
+    <a class="menu" href="index.php#access"
       onclick="document.getElementById('nav_sp').style.display = 'none'">アクセス</a>
   </nav>
   </header>
@@ -123,7 +123,7 @@
           <p class="flow_title" data-number="01">ご予約</p>
           <p class="flow_text">
             当サイトのフォームからお申込みをしてください。ご予約完了後、メールにて教らせいたします。<br>
-            <img src="img/link.png"><a class="flow_link" href="index.html#reservation">フォームはこちら</a>
+            <img src="img/link.png"><a class="flow_link" href="index.php#reservation">フォームはこちら</a>
           </p>
         </div>
         <div class="flow">
@@ -131,7 +131,7 @@
           <p class="flow_text">
             予約時間の５分前までにお店にお越しください。<br>
             万が一ご予約時間に遅れる際は、お電話にてご連絡いただきますよう、よろしくお願いいたします。<br>
-            <img src="img/link.png"><a class="flow_link" href="index.html#access">京都駅からのアクセスはこちら</a>
+            <img src="img/link.png"><a class="flow_link" href="index.php#access">京都駅からのアクセスはこちら</a>
           </p>
         </div>
         <div class="flow">
