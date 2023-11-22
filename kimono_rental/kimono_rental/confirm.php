@@ -40,7 +40,7 @@ $message = $_POST['message'];
     <div class="innner">
       <nav id="nav_pc">
         <a href="index.html#rental_plan">レンタルプラン</a>
-        <a href="index.html#rental_flow">当日の流れ</a>
+        <a href="index.html#rental_flow">レンタルの流れ</a>
         <a href="index.html#reservation">ご予約</a>
         <a href="index.html#gallery">ギャラリー</a>
         <a href="index.html#access">アクセス</a>
@@ -57,7 +57,7 @@ $message = $_POST['message'];
     <a class="menu" href="index.html#rental_plan"
       onclick="document.getElementById('nav_sp').style.display = 'none'">レンタルプラン</a>
     <a class="menu" href="index.html#rental_flow"
-      onclick="document.getElementById('nav_sp').style.display = 'none'">当日の流れ</a>
+      onclick="document.getElementById('nav_sp').style.display = 'none'">レンタルの流れ</a>
     <a class="menu" href="index.html#reservation"
       onclick="document.getElementById('nav_sp').style.display = 'none'">ご予約</a>
     <a class="menu" href="index.html#gallery"
