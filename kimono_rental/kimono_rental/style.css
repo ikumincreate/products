@@ -1,0 +1,725 @@
+/* PC、スマホ共通スタイル */
+/* 横幅設定 */
+body {
+  font-family: 'Kaisei Decol', serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  margin: 0;
+}
+
+/* 全画像共通 */
+/* ヘッダー */
+header {
+  background-color: #0f2350;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} 
+
+#main_text {
+  text-align:center;
+  font-family: 'Kaisei Decol', serif;
+}
+
+/* メイン画像下のセールスポイント */
+#main_text {
+  color: #F1A444;
+  text-align: center;
+  font-size: 27px;
+  margin: 50px auto 20px auto;
+}
+
+  /* レンタルプラン */
+  .plans {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+  }
+
+  .sales_point {
+    margin: 3px auto;
+  }
+
+  .plan_name{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ce2222;
+    margin: auto  auto auto 15px;
+  } 
+
+  .plan_text {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 auto 5px auto;
+  }
+
+  .point {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+
+  /* 予約フォーム */
+  /* 送信ボタン */
+  .btn {
+    background: #0f2350;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 10px 20px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .btn:hover  {
+    background: #FFF;
+    color: #0f2350;
+  }
+  
+  .btn:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn:hover:after {
+    border-color: #0f2350;
+  }
+
+/* フッター */
+footer {
+  background-color: #0f2350;
+}
+
+
+#shop_name {
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Kaisei Decol', serif;
+}
+
+.shop_info {
+  color: aliceblue;
+}
+
+/* コピーライト */
+#copy {
+  color: #f0f8ff;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ここまでが共通スタイル */
+
+/* PC用スタイル */
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 1080px;
+    min-width: 768px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー*/
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } 
+
+  /* ナビゲーションのレイアウト */
+  #nav_pc {
+    text-align: right;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Kaisei Decol', serif;
+  }
+
+  #nav_pc > a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 20px;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+
+  #nav_pc > a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #F1A444;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+
+  #nav_pc > a:hover::after {
+    width: 100%;
+  }
+
+  /* スマホ用ナビゲーションの非表示 */
+  #menu_sp {
+    display: none;
+  }
+
+  #nav_sp {
+    display: none;
+  }
+
+  /* タイトル文字 */
+  .title {
+    color: #0f2350;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1px 2px;
+    border-left: 2px solid #F1A444;
+    border-top: 2px solid #F1A444;
+    font-family: 'Kaisei Decol', serif;
+    margin: 100px auto 30px auto;
+  }
+
+  p {
+    color: black;
+    font-size: 15px;
+  }
+
+
+  /* レンタルの流れ */
+  .flow_title {
+    color: #0f2350;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0 0 0;
+    border-bottom:1px solid #0f2350;
+    width: 20%;
+  }
+
+  .flow_title::before {
+    content: attr(data-number);
+    margin: 0 10px 0 0;
+    color: #0f2350;
+    font-size: 30px;
+    font-family: 'Kaisei Decol', serif;
+    border-bottom:1px solid;
+
+  }
+
+  .flow_text {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    margin: auto;
+  }
+
+  .flow_link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .flow_text > a {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+
+  .flow_text > a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #F1A444;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+
+  .flow_text > a:hover::after {
+    width: 100%;
+  }
+
+
+  /* 予約フォーム */
+  label {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  /* 外枠 */
+  #reservation > form > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  /* 左列の見出し */
+  .reserve_heading {
+    /* width: 240px; */
+    align-self: center;
+  }
+
+  /* 見出しのラベル */
+  .reserve_label {
+    font-weight: bold;
+  }
+
+  /* 必須 */
+  .reserve_span {
+    font-size: 14px;;
+    color: #ce2222;
+    margin: 0 0 0 20px;
+  }
+
+  /* テキストボックス */
+  .reserve_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reserve_textbox {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #6D7E9F;
+    border-bottom-style: solid;
+    background-color: #F5F5F5;
+    width: 400px;
+    height: 56px;
+  }
+
+  /* セレクトボックス */
+  select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #6D7E9F;
+    border-bottom-style: solid;
+    background-color: #F5F5F5;
+    width: 400px;
+    height: 56px;
+  }
+
+  /* お問い合わせ・ご要望のテキストエリア */
+  .reserve_textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #6D7E9F;
+    border-bottom-style: solid;
+    background-color: #F5F5F5;
+    width: 400px;
+    height: 200px;
+  }
+
+
+
+  /* ギャラリー */
+  #gallery_container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #gallery_item img {
+    width: 33%; /* 画像を半分の幅にする */
+    box-sizing: border-box; /* ボーダーボックスモデルを使用して、幅にボーダーや余白も含める */
+  }
+
+  #insta {
+    padding: 10px auto;
+    color: black;
+    text-align: right;
+  }
+
+  #insta a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+
+
+  #insta a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #F1A444;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+
+  #insta a:hover::after {
+    width: 100%;
+  }
+
+
+  /* フッター */
+  /* アクセス */
+  #container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0 0 0 ;
+  }
+
+  #map {
+    margin: 25px 0;
+  }
+
+}
+
+/* confirmページ */
+#btn_set {
+  display: flex;
+  justify-content: center;
+  margin: 50px ;
+}
+
+.confirm_table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.confirm_table th {
+  padding: 10px;
+  background: #0f2350;
+  border: solid 1px #666666;
+  color: #ffffff
+}
+
+.confirm_table td {
+  padding: 10px;
+  border: solid 1px #0f2350;
+}
+
+.confirm_table td:first-child {
+  background: #F5F5F5;
+}
+
+
+
+
+/* スマホ画面表示 */
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PC用ナビゲーション非表示 */
+  #nav_pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu_sp {
+    aspect-ratio: 1 / 1; /* ハンバーガーメニューのアイコンが縦長になる… */
+    float: right;
+    margin: 0;
+  }
+
+   /* スマホ用ナビゲーションの表示切替 */
+   /* 初期状態、レイアウトと非表示設定 */
+  #nav_sp {
+    background-color: #0f2350;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+   /* ×ボタン */
+    #close {
+      position: absolute;
+      margin: auto;
+      top: 20px;
+      right: 20px;
+    }
+  
+  /* ナビゲーションメニュー用ロゴ */
+    #logo_sp {
+      margin: 80px 0 30px 20px;
+    }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav_sp > a {
+    display: block;
+  }
+  #nav_sp > a:link {
+    color: #ffffff;
+  }
+  #nav_sp > a:visited {
+    color: #ffffff;
+  }
+  #nav_sp > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #nav_sp > a:active {
+    color: #ffffff;
+  }
+  #nav_sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: auto 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  /* タイトル文字 */
+  .title {
+    color: #0f2350;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1px 2px;
+    border-left: 2px solid #F1A444;
+    border-top: 2px solid #F1A444;
+    font-family: 'Kaisei Decol', serif;
+    margin: 100px 10px 30px 10px;
+  }
+  
+  p {
+    color: black;
+    font-size: 15px;
+    margin: auto 10px;
+  }
+
+
+  /* レンタルプラン  */
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto ;
+  }
+  
+  .plan {
+    margin: 20px auto ;
+  }
+
+  /* レンタルの流れ */
+  .flow_title {
+    color: #0f2350;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 0 0 10px;
+    border-bottom:1px solid #0f2350;
+  }
+
+  .flow_title::before {
+    content: attr(data-number);
+    margin: 0 10px 0 10px;
+    color: #0f2350;
+    font-size: 30px;
+    font-family: 'Kaisei Decol', serif;
+    border-bottom:1px solid;
+
+  }
+
+  .flow_text {
+    color: black;
+    font-size: 18px;
+    text-align: left;
+    margin: auto 10px;
+  }
+
+  .flow_link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+
+  a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #F1A444;
+    transition: .3s;
+    transform: translateX(-50%);
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+
+
+
+    /* 予約フォーム */
+    label {
+      color: black;
+      font-size: 18px;
+      text-align: left;
+    }
+  
+    /* 外枠 */
+    #reservation > form > div {
+      /* display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; */
+      padding-bottom: 30px;
+    }
+  
+    /* 左列の見出し */
+    .reserve_heading {
+      align-self: center;
+    }
+  
+    /* 見出しのラベル */
+    .reserve_label {
+      font-weight: bold;
+    }
+  
+    /* 必須 */
+    .reserve_span {
+      font-size: 14px;;
+      color: #ce2222;
+      margin: 0 0 0 20px;
+    }
+  
+    /* テキストボックス */
+    .reserve_container {
+      margin: 20px 10px;
+    }
+  
+    .reserve_textbox {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom-width: 1px;
+      border-bottom-color: #6D7E9F;
+      border-bottom-style: solid;
+      background-color: #F5F5F5;
+      width: 100%;
+      height: 56px;
+    }
+  
+    /* セレクトボックス */
+    select {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom-width: 1px;
+      border-bottom-color: #6D7E9F;
+      border-bottom-style: solid;
+      background-color: #F5F5F5;
+      width: 100%;
+      height: 56px;
+    }
+  
+    /* お問い合わせ・ご要望のテキストエリア */
+    .reserve_textarea {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom-width: 1px;
+      border-bottom-color: #6D7E9F;
+      border-bottom-style: solid;
+      background-color: #F5F5F5;
+      width: 100%;
+      height: 200px;
+    }
+  
+
+
+
+  /* ギャラリー */
+  #gallery_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+  }
+  
+  .gallery_sp {
+    margin: 20px auto 20px auto;
+  }
+
+  #insta {
+    margin: 0 auto 50px auto;
+    color: #0f2350;
+    text-align: center;
+  }
+
+  #insta a {
+    font-size: 20px;
+    color: #0f2350;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* アクセス */
+  #access {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px 0 0 0 ;
+  }
+
+  #info {
+    margin: 20px 10px;
+  }
+
+  #map {
+    margin: 20px;
+  }
+
+}
