@@ -362,12 +362,15 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+
+  }
+  #gallery_item {
+  text-align: center;
   }
 
-  #gallery_item img {
+  #gallery_item img{
     width: 33%; /* 画像を半分の幅にする */
-    box-sizing: border-box; /* ボーダーボックスモデルを使用して、幅にボーダーや余白も含める */
+    /* box-sizing: border-box; ボーダーボックスモデルを使用して、幅にボーダーや余白も含める */
   }
 
   #insta {
@@ -695,11 +698,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px auto 20px auto;
+    /* margin: 20px; */
   }
   
   .gallery_sp {
-    margin: 20px auto 20px auto;
+    margin: 20px 10px;
   }
 
   #insta {

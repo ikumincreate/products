@@ -170,6 +170,7 @@
     <!-- 予約フォーム -->
     <section id="reservation">
       <h2 class="title">ご予約</h2>
+      <?php echo do_shortcode('[wpforms id="32"]'); ?>
 
       <form action="confirm.php" method="post">
         <div class="reserve_container">

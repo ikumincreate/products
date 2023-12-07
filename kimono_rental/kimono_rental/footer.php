@@ -22,7 +22,9 @@
     </div>
     </section>
     <p id="copy">&copy; kimonorental KOJIMA. All rights reserved.</p>
+    <?php wp_footer(); ?>
   </footer>
+
 </body>
 
 

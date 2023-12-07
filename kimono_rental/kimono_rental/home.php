@@ -1,8 +1,19 @@
 <?php get_header();?>
 
   <!-- メイン画像 -->
-  <img src="<?php echo get_template_directory_uri(); ?>/images/main4.png" alt="着物を着た女性の後ろ姿" />
-  <!-- <img src="img/main4.png" alt="着物を着た女性の後ろ姿"> -->
+  <!-- <div class="slider">
+    <div>
+      <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/main1.png" alt="メイン画像...着物を着た女性の後ろ姿" />
+    </div>
+    <div>
+      <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/main2.png" alt="" />
+    </div>
+    <div>
+      <img class="carouselImg" src="<?php echo get_template_directory_uri(); ?>/images/main3.png" alt="" />
+    </div>
+  </div> -->
+  <img src="<?php echo get_template_directory_uri(); ?>/images/main1.png" alt="着物を着た女性の後ろ姿" />
+
 
   <main>
 
@@ -18,47 +29,28 @@
       <h2 class="title">レンタルプラン</h2>
       <div class="plans">
         <div class="plan">
+        <!-- 各プランへのリンクの書き方が分かりません -->
+        <a class="nav-link" href="<?php echo home_url(); ?>/category/plan">
           <img src="<?php echo get_template_directory_uri(); ?>/images/plan1.jpg" alt="フルセットプラン" />
-          <!-- <img src="img/plan1.jpg" alt=""> -->
           <p class="sales_point">迷ったらこのプラン！</p>
-          <p class="plan_name">フルセットプラン<span class="price">５,０００円</span></p>
-          <p class="plan_text">
-            ・着物レンタル<br>
-            ・着付け<br>
-            ・ヘアセット<br>
-          </p>
+          <p class="plan_name">大人女子プラン<span class="price">５,０００円</span></p>
+        </a>
         </div>
         <div class="plan">
           <img src="<?php echo get_template_directory_uri(); ?>/images/plan2.jpg" alt="" />
-          <!-- <img src="img/plan2.jpg" alt=""> -->
-          <p class="sales_point">お手軽プラン</p>
-            <p class="plan_name">シンプルプラン<span class="price">４,０００円</span></p>
-            <p class="plan_text">
-              ・着物レンタル<br>
-              ・着付け<br>
-            </p>
+          <p class="sales_point">２人でお得に！</p>
+            <p class="plan_name">カップルプラン<span class="price">７,０００円</span></p>
+
         </div>
         <div class="plan">
           <img src="<?php echo get_template_directory_uri(); ?>/images/plan3.jpg" alt="" />
-          <!-- <img src="img/plan3.jpg" alt=""> -->
           <p class="sales_point">７～８月限定プラン</p>
           <p class="plan_name">浴衣プラン<span class="price">３,０００円</span></p>
-          <p class="plan_text">
-            ・浴衣レンタル<br>
-            ・着付け<br>
-          </p>
         </div>
         <div class="plan">
           <img src="<?php echo get_template_directory_uri(); ?>/images/plan4.jpg" alt="" />
-          <!-- <img src="img/plan4.jpg" alt=""> -->
           <p class="sales_point">プロによる撮影付き</p>
-          <p class="plan_name">写真撮影プラン<span class="price">８,０００円</span></p>
-          <p class="plan_text">
-            ・着物レンタル<br>
-            ・着付け<br>
-            ・ヘアセット<br>
-            ・写真撮影<br>
-          </p>
+          <p class="plan_name">写真撮影プラン<span class="price">９,０００円</span></p>
         </div>
       </div>
       <p class="point">
@@ -127,7 +119,9 @@
     <!-- 予約フォーム -->
     <section id="reservation">
       <h2 class="title">ご予約</h2>
-      <form action="confirm.php" method="post">
+      <?php echo do_shortcode('[wpforms id="32"]'); ?>
+
+      <!-- <form action="confirm.php" method="post">
         <div class="reserve_container">
           <div class="reserve_heading">
             <label>お名前<span class="reserve_span">＊必須</span></label>
@@ -222,7 +216,7 @@
         </div>
 
         <input type="submit" value="内容確認" class="btn">
-      </form>
+      </form> -->
       </section> 
 
     <!-- ギャラリー -->
@@ -230,17 +224,17 @@
       <h2 class="title">ギャラリー</h2>
       <div id="gallery_container">
         <div id="gallery_item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg" alt="お祈りする女性" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg" class="gallery_sp" alt="お祈りする女性" />
           <!-- <img src="img/gallery1.jpg" class="gallery_sp" alt="お祈りする女性"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg" alt="背を向けた女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg" class="gallery_sp"  alt="背を向けた女性" />
           <!-- <img src="img/gallery2.jpg" class="gallery_sp" alt="背を向けた女性"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg" alt="チェック柄の着物を着た2人の女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg" class="gallery_sp"  alt="チェック柄の着物を着た2人の女性" />
           <!-- <img src="img/gallery3.jpg" class="gallery_sp" alt="チェック柄の着物を着た2人の女性"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg" alt="着物を着たカップル" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg" class="gallery_sp"  alt="着物を着たカップル" />
           <!-- <img src="img/gallery4.jpg" class="gallery_sp" alt="着物を着たカップル"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg" alt="淡い着物を着た女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg" class="gallery_sp" alt="淡い着物を着た女性" />
           <!-- <img src="img/gallery5.jpg" class="gallery_sp" alt="淡い着物を着た女性"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg" alt="おみくじを結んでお祈りする女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg" class="gallery_sp" alt="おみくじを結んでお祈りする女性" />
           <!-- <img src="img/gallery6.jpg" class="gallery_sp" alt="おみくじを結んでお祈りする女性"> -->
         </div>
         </div>
