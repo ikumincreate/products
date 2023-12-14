@@ -27,32 +27,47 @@
     <!-- レンタルプラン -->
     <section id="rental_plan">
       <h2 class="title">レンタルプラン</h2>
-      <div class="plans">
-        <div class="plan">
-        <!-- 各プランへのリンクの書き方が分かりません -->
-        <a class="nav-link" href="<?php echo home_url(); ?>/category/plan">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/plan1.jpg" alt="フルセットプラン" />
-          <p class="sales_point">迷ったらこのプラン！</p>
-          <p class="plan_name">大人女子プラン<span class="price">５,０００円</span></p>
-        </a>
-        </div>
-        <div class="plan">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/plan2.jpg" alt="" />
-          <p class="sales_point">２人でお得に！</p>
-            <p class="plan_name">カップルプラン<span class="price">７,０００円</span></p>
+        <?php
+          //取得したい投稿記事などの条件を引数として渡す
+          $args = array(
+            // 投稿タイプ
+            'post_type'      => 'post',
+            // カテゴリー名
+            'category_name' => 'plan',
+            // 1ページに表示する投稿数
+            'posts_per_page' => 4,
+          );
+           // データの取得
+          $posts = get_posts($args);
+        ?>
 
-        </div>
-        <div class="plan">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/plan3.jpg" alt="" />
-          <p class="sales_point">７～８月限定プラン</p>
-          <p class="plan_name">浴衣プラン<span class="price">３,０００円</span></p>
-        </div>
-        <div class="plan">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/plan4.jpg" alt="" />
-          <p class="sales_point">プロによる撮影付き</p>
-          <p class="plan_name">写真撮影プラン<span class="price">９,０００円</span></p>
-        </div>
-      </div>
+      
+        <!-- ループ処理 -->
+        <?php foreach($posts as $post): ?>
+          <?php setup_postdata($post); ?>
+          <div class="plans">
+          <div class="news_post_small">
+            <div class="news_post_meta">
+                <!-- aタグで投稿記事へのリンクを作成 -->
+                <a href="<?php echo get_permalink(); ?>"></a>
+            </div>
+            <div class="news_post_small_title">
+              <!--  aタグで投稿記事へのリンクを作成する -->
+              <a href="<?php the_permalink(); ?>">
+                <!-- 投稿記事のアイキャッチ画像を表示する -->
+                <?php the_post_thumbnail(); ?>
+                <br>
+                <!--  投稿記事のタイトルを表示する -->
+                <?php the_title(); ?>
+              </a>
+            </div>
+          </div>
+          </div>  
+
+          <?php endforeach; ?>
+          <!-- 使用した投稿データをリセット -->
+          <?php wp_reset_postdata(); ?>
+
       <p class="point">
         すべてのプランにバッグ・草履（下駄）のレンタルも含まれていますので手ぶらでご来店いただけます♪<br>
       </p>
@@ -66,7 +81,6 @@
           <p class="flow_text">
             当サイトのフォームからお申込みをしてください。ご予約完了後、メールにて教らせいたします。<br>
             <img src="<?php echo get_template_directory_uri(); ?>/images/link.png" alt="指差し" />
-            <!-- <img src="img/link.png"> -->
             <a class="flow_link" href="index.php#reservation">フォームはこちら</a>
           </p>
         </div>
@@ -76,7 +90,6 @@
             予約時間の５分前までにお店にお越しください。<br>
             万が一ご予約時間に遅れる際は、お電話にてご連絡いただきますよう、よろしくお願いいたします。<br>
             <img src="<?php echo get_template_directory_uri(); ?>/images/link.png" alt="指差し" />
-            <!-- <img src="img/link.png"> -->
             <a class="flow_link" href="index.php#access">京都駅からのアクセスはこちら</a>
           </p>
         </div>
@@ -224,18 +237,12 @@
       <h2 class="title">ギャラリー</h2>
       <div id="gallery_container">
         <div id="gallery_item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg" class="gallery_sp" alt="お祈りする女性" />
-          <!-- <img src="img/gallery1.jpg" class="gallery_sp" alt="お祈りする女性"> -->
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg" class="gallery_sp" alt="お祈りする女性" />
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg" class="gallery_sp"  alt="背を向けた女性" />
-          <!-- <img src="img/gallery2.jpg" class="gallery_sp" alt="背を向けた女性"> -->
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg" class="gallery_sp"  alt="チェック柄の着物を着た2人の女性" />
-          <!-- <img src="img/gallery3.jpg" class="gallery_sp" alt="チェック柄の着物を着た2人の女性"> -->
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg" class="gallery_sp"  alt="着物を着たカップル" />
-          <!-- <img src="img/gallery4.jpg" class="gallery_sp" alt="着物を着たカップル"> -->
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg" class="gallery_sp" alt="淡い着物を着た女性" />
-          <!-- <img src="img/gallery5.jpg" class="gallery_sp" alt="淡い着物を着た女性"> -->
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg" class="gallery_sp" alt="おみくじを結んでお祈りする女性" />
-          <!-- <img src="img/gallery6.jpg" class="gallery_sp" alt="おみくじを結んでお祈りする女性"> -->
         </div>
         </div>
       <div id="insta">

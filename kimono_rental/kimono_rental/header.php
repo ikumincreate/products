@@ -31,11 +31,11 @@
   <!-- PC用ナビゲーションメニュー -->
   <a href="/" id="logo" ><img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" alt="トップページに戻る"></a>
   <nav id="nav_pc">
-    <a href="index.php#rental_plan">レンタルプラン</a>
-    <a href="index.php#rental_flow">レンタルの流れ</a>
-    <a href="index.php#reservation">ご予約</a>
-    <a href="index.php#gallery">ギャラリー</a>
-    <a href="index.php#access">アクセス</a>
+    <a href="<?php echo home_url(); ?>#rental_plan">レンタルプラン</a>
+    <a href="<?php echo home_url(); ?>#rental_flow">レンタルの流れ</a>
+    <a href="<?php echo home_url(); ?>#reservation">ご予約</a>
+    <a href="<?php echo home_url(); ?>#gallery">ギャラリー</a>
+    <a href="<?php echo home_url(); ?>#access">アクセス</a>
   </nav>
 
 

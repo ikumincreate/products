@@ -42,13 +42,13 @@ img {
 }
 
   /* レンタルプラン */
-  .plans {
+  /* .plans {
     display: flex;
     justify-content: center;
     margin: 20px auto 20px auto;
-  }
+  } */
 
-  .sales_point {
+  /* .sales_point {
     margin: 3px auto;
   }
 
@@ -71,7 +71,7 @@ img {
     font-size: 15px;
     text-align: left;
     margin: 0 auto 5px auto;
-  }
+  } */
 
   .point {
     text-align: center;
@@ -219,6 +219,11 @@ footer {
     font-size: 15px;
   }
 
+  .plans {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+  }
 
   /* レンタルの流れ */
   .flow_title {
@@ -238,7 +243,6 @@ footer {
     font-size: 30px;
     font-family: 'Kaisei Decol', serif;
     border-bottom:1px solid;
-
   }
 
   .flow_text {
@@ -277,45 +281,45 @@ footer {
 
 
   /* 予約フォーム */
-  label {
+  /* label {
     color: black;
     font-size: 18px;
     text-align: left;
-  }
+  } */
 
   /* 外枠 */
-  #reservation > form > div {
+  /* #reservation > form > div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 30px;
-  }
+  } */
 
   /* 左列の見出し */
-  .reserve_heading {
-    /* width: 240px; */
-    align-self: center;
-  }
+  /* .reserve_heading {
+      width: 240px; 
+      align-self: center;
+  } */
 
   /* 見出しのラベル */
-  .reserve_label {
+  /* .reserve_label {
     font-weight: bold;
-  }
+  } */
 
   /* 必須 */
-  .reserve_span {
+  /* .reserve_span {
     font-size: 14px;;
     color: #ce2222;
     margin: 0 0 0 20px;
-  }
+  } */
 
   /* テキストボックス */
-  .reserve_container {
+  /* .reserve_container {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
-  .reserve_textbox {
+  /* .reserve_textbox {
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -325,10 +329,10 @@ footer {
     background-color: #F5F5F5;
     width: 400px;
     height: 56px;
-  }
+  } */
 
   /* セレクトボックス */
-  select {
+  /* select {
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -338,10 +342,10 @@ footer {
     background-color: #F5F5F5;
     width: 400px;
     height: 56px;
-  }
+  } */
 
   /* お問い合わせ・ご要望のテキストエリア */
-  .reserve_textarea {
+  /* .reserve_textarea {
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -351,7 +355,7 @@ footer {
     background-color: #F5F5F5;
     width: 400px;
     height: 200px;
-  }
+  } */
 
 
 
@@ -362,8 +366,8 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
   }
+
   #gallery_item {
   text-align: center;
   }
@@ -388,7 +392,6 @@ footer {
     display: inline-block;
     transition: .3s;
   }
-
 
   #insta a::after {
     position: absolute;
@@ -420,10 +423,67 @@ footer {
     margin: 25px 0;
   }
 
+  /* 投稿ページ */
+  .post_plan {
+    max-width: 1080px;
+    min-width: 768px;
+    margin: 0 auto 0 auto;
+    padding: 30px;
+  }
+
+  .post_catch{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f2350;
+    margin: 30px auto auto auto;
+  }
+
+  .wp-block-heading {
+    color: #0f2350;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1px 2px;
+    border-left: 2px solid #F1A444;
+    border-top: 2px solid #F1A444;
+    font-family: 'Kaisei Decol', serif;
+    margin: 10px auto 30px auto;
+  }
+
+  .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ce2222;
+    margin: auto  auto auto 15px;
+  } 
+
+  .post_set {
+    color: #0f2350;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Kaisei Decol', serif;
+    margin: auto auto auto 20px;
+  }
+
+  .post_set_color {
+    background-color: #fbe5cb;
+    padding: 0;
+  }
+
+  .post_content {
+    font-size: 20px;
+    margin: auto auto auto 25px;
+  }
+
+
+  .post_note {
+    font-size: 20px;
+    margin: 50px auto 20px auto;
+  }
+
 }
 
 /* confirmページ */
-#btn_set {
+/* #btn_set {
   display: flex;
   justify-content: center;
   margin: 50px ;
@@ -450,7 +510,7 @@ footer {
 
 .confirm_table td:first-child {
   background: #F5F5F5;
-}
+} */
 
 
 
@@ -616,43 +676,43 @@ footer {
 
 
     /* 予約フォーム */
-    label {
+    /* label {
       color: black;
       font-size: 18px;
       text-align: left;
-    }
+    } */
   
     /* 外枠 */
-    #reservation > form > div {
+    /* #reservation > form > div {
       /* display: flex;
       flex-direction: row;
-      flex-wrap: wrap; */
+      flex-wrap: wrap; 
       padding-bottom: 30px;
     }
-  
+   */
     /* 左列の見出し */
-    .reserve_heading {
+    /* .reserve_heading {
       align-self: center;
-    }
+    } */
   
     /* 見出しのラベル */
-    .reserve_label {
+    /* .reserve_label {
       font-weight: bold;
-    }
+    } */
   
     /* 必須 */
-    .reserve_span {
+    /* .reserve_span {
       font-size: 14px;;
       color: #ce2222;
       margin: 0 0 0 20px;
-    }
+    } */
   
     /* テキストボックス */
-    .reserve_container {
+    /* .reserve_container {
       margin: 20px 10px;
-    }
+    } */
   
-    .reserve_textbox {
+    /* .reserve_textbox {
       border-top: 0;
       border-left: 0;
       border-right: 0;
@@ -662,10 +722,10 @@ footer {
       background-color: #F5F5F5;
       width: 100%;
       height: 56px;
-    }
+    } */
   
     /* セレクトボックス */
-    select {
+    /* select {
       border-top: 0;
       border-left: 0;
       border-right: 0;
@@ -676,9 +736,9 @@ footer {
       width: 100%;
       height: 56px;
     }
-  
+   */
     /* お問い合わせ・ご要望のテキストエリア */
-    .reserve_textarea {
+    /* .reserve_textarea {
       border-top: 0;
       border-left: 0;
       border-right: 0;
@@ -689,7 +749,7 @@ footer {
       width: 100%;
       height: 200px;
     }
-  
+   */
 
 
 
