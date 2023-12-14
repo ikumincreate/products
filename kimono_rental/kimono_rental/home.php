@@ -43,6 +43,7 @@
 
       
         <!-- ループ処理 -->
+        <ul class="plan_list">
         <?php foreach($posts as $post): ?>
           <?php setup_postdata($post); ?>
           <div class="plans">
@@ -58,13 +59,14 @@
                 <?php the_post_thumbnail(); ?>
                 <br>
                 <!--  投稿記事のタイトルを表示する -->
-                <?php the_title(); ?>
+                <p class="plan_title" ><?php the_title(); ?></p>
               </a>
             </div>
           </div>
           </div>  
 
           <?php endforeach; ?>
+        </ul>
           <!-- 使用した投稿データをリセット -->
           <?php wp_reset_postdata(); ?>
 
