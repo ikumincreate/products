@@ -14,9 +14,7 @@
   </div> -->
   <img src="<?php echo get_template_directory_uri(); ?>/images/main1.png" alt="着物を着た女性の後ろ姿" />
 
-
   <main>
-
 
     <h1 id="main_text">
       古典的な和柄から、華やかなモダン柄まで豊富な着物を取り揃えていますので<br>
@@ -43,30 +41,32 @@
 
       
         <!-- ループ処理 -->
-        <ul class="plan_list">
-        <?php foreach($posts as $post): ?>
+        <div class="plan_list">
+          <?php foreach($posts as $post): ?>
           <?php setup_postdata($post); ?>
           <div class="plans">
-          <div class="news_post_small">
-            <div class="news_post_meta">
+            <div class="news_post_small">
+              <div class="news_post_meta">
                 <!-- aタグで投稿記事へのリンクを作成 -->
                 <a href="<?php echo get_permalink(); ?>"></a>
+              </div>
+              <div class="news_post_small_title">
+                <!--  aタグで投稿記事へのリンクを作成する -->
+                <p class="plan_name">
+                  <a href="<?php the_permalink(); ?>">
+                    <!-- 投稿記事のアイキャッチ画像を表示する -->
+                    <?php the_post_thumbnail(); ?>
+                    <br>
+                    <!--  投稿記事のタイトルを表示する -->
+                    <?php the_title(); ?>
+                  </a>
+                </p>
+              </div>
             </div>
-            <div class="news_post_small_title">
-              <!--  aタグで投稿記事へのリンクを作成する -->
-              <a href="<?php the_permalink(); ?>">
-                <!-- 投稿記事のアイキャッチ画像を表示する -->
-                <?php the_post_thumbnail(); ?>
-                <br>
-                <!--  投稿記事のタイトルを表示する -->
-                <p class="plan_title" ><?php the_title(); ?></p>
-              </a>
-            </div>
-          </div>
           </div>  
 
           <?php endforeach; ?>
-        </ul>
+        </div>
           <!-- 使用した投稿データをリセット -->
           <?php wp_reset_postdata(); ?>
 
@@ -83,7 +83,7 @@
           <p class="flow_text">
             当サイトのフォームからお申込みをしてください。ご予約完了後、メールにて教らせいたします。<br>
             <img src="<?php echo get_template_directory_uri(); ?>/images/link.png" alt="指差し" />
-            <a class="flow_link" href="index.php#reservation">フォームはこちら</a>
+            <a href="index.php#reservation" class="flow_link">フォームはこちら</a>
           </p>
         </div>
         <div class="flow">
@@ -92,7 +92,7 @@
             予約時間の５分前までにお店にお越しください。<br>
             万が一ご予約時間に遅れる際は、お電話にてご連絡いただきますよう、よろしくお願いいたします。<br>
             <img src="<?php echo get_template_directory_uri(); ?>/images/link.png" alt="指差し" />
-            <a class="flow_link" href="index.php#access">京都駅からのアクセスはこちら</a>
+            <a href="index.php#access" class="flow_link">京都駅からのアクセスはこちら</a>
           </p>
         </div>
         <div class="flow">
@@ -134,105 +134,10 @@
     <!-- 予約フォーム -->
     <section id="reservation">
       <h2 class="title">ご予約</h2>
-      <?php echo do_shortcode('[wpforms id="32"]'); ?>
-
-      <!-- <form action="confirm.php" method="post">
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>お名前<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <input type="text" placeholder="名前を入力してください" class="reserve_textbox" name="user_name">
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>着付人数<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <input type="text" placeholder="例：2人" class="reserve_textbox" name="user_count">
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>希望日<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <input type="text" placeholder="例：2023年12月1日" class="reserve_textbox" name="hope_day">
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>希望時間（第一希望）<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <select name="first_time"> 
-            <option value="９：００～">　９：００～</option>
-            <option value="１０：００～">１０：００～</option>
-            <option value="１１：００～">１１：００～</option>
-            <option value="１２：００～">１２：００～</option>
-            <option value="３：００～">１３：００～</option>
-            <option value="１４：００～">１４：００～</option>
-            <option value="５：００～">１５：００～</option>
-          </select>
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>希望時間（第二希望）<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <select name="second_time">           
-            <option value="９：００～">　９：００～</option>
-            <option value="１０：００～">１０：００～</option>
-            <option value="１１：００～">１１：００～</option>
-            <option value="１２：００～">１２：００～</option>
-            <option value="３：００～">１３：００～</option>
-            <option value="１４：００～">１４：００～</option>
-            <option value="５：００～">１５：００～</option>
-          </select>
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>希望プラン<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <select name="hope_plan"> 
-            <option value="フルセットプラン">フルセットプラン ５,０００円</option>
-            <option value="シンプルプラン">シンプルプラン ４,０００円</option>
-            <option value="浴衣プラン">浴衣プラン ３,０００円</option>
-            <option value="写真撮影プラン">写真撮影プラン ８,０００円</option>
-          </select>
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>お電話番号</label>
-          </div>
-
-          <input type="text" placeholder="例：000-0000-0000" class="reserve_textbox" name="user_phone">
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>メールアドレス<span class="reserve_span">＊必須</span></label>
-          </div>
-
-          <input type="text" placeholder="例：kimono.kojima@example.jp" class="reserve_textbox" name="user_email">
-        </div>
-
-        <div class="reserve_container">
-          <div class="reserve_heading">
-            <label>お問い合わせ・ご要望</label>
-          </div>
-
-          <textarea class="reserve_textarea" name="message"></textarea>
-        </div>
-
-        <input type="submit" value="内容確認" class="btn">
-      </form> -->
-      </section> 
+      <div id="wpforms">
+        <?php echo do_shortcode('[wpforms id="32"]'); ?>
+      </div>
+    </section> 
 
     <!-- ギャラリー -->
     <section id="gallery">
@@ -240,15 +145,15 @@
       <div id="gallery_container">
         <div id="gallery_item">
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg" class="gallery_sp" alt="お祈りする女性" />
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg" class="gallery_sp"  alt="背を向けた女性" />
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg" class="gallery_sp"  alt="チェック柄の着物を着た2人の女性" />
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg" class="gallery_sp"  alt="着物を着たカップル" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg" class="gallery_sp" alt="背を向けた女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg" class="gallery_sp" alt="チェック柄の着物を着た2人の女性" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg" class="gallery_sp" alt="着物を着たカップル" />
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg" class="gallery_sp" alt="淡い着物を着た女性" />
           <img src="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg" class="gallery_sp" alt="おみくじを結んでお祈りする女性" />
         </div>
-        </div>
+      </div>
       <div id="insta">
-        <a id="link" href="https://www.instagram.com/">Instagramでもっと見る</a>
+        <a href="https://www.instagram.com/">Instagramでもっと見る</a>
       </div>
     </section>
 

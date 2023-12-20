@@ -15,7 +15,7 @@
       <div class="inner">
         <div id="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.7717740574244!2d135.75792757575695!3d34.98738097281916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ae35cc5255%3A0x2d926c53f55b49b2!2z44CSNjAwLTgyMTYg5Lqs6YO95bqc5Lqs6YO95biC5LiL5Lqs5Yy65aGp5bCP6Lev6YCa5LiN5piO6ZaA5p2x5YWl5p2x5aGp5bCP6Lev55S677yX77yR77yX4oiS77yRIOS6rOmDvemnheWJjeODk-ODqw!5e0!3m2!1sja!2sjp!4v1700555449564!5m2!1sja!2sjp" 
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </div>

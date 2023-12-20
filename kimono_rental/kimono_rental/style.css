@@ -23,120 +23,46 @@ header {
   background-color: #0f2350;
 }
 
+.wpforms-form button[type=submit] {
+  background: #0f2350 !important;
+  border-radius: 10px;
+  width:  150px;
+}
+
 img {
   max-width: 100%;
   height: auto;
 } 
-
-#main_text {
-  text-align:center;
-  font-family: 'Kaisei Decol', serif;
-}
 
 /* メイン画像下のセールスポイント */
 #main_text {
   color: #F1A444;
   text-align: center;
   font-size: 27px;
-  margin: 50px auto 20px auto;
+  margin: 50px 10px 20px 10px;
+  font-family: 'Kaisei Decol', serif;
 }
 
-  /* レンタルプラン */
-  /* .plans {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 20px auto;
-  } */
 
-  /* .sales_point {
-    margin: 3px auto;
-  }
-
-  .plan_name{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    margin: 0 auto;
-  }
-
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ce2222;
-    margin: auto  auto auto 15px;
-  } 
-
-  .plan_text {
-    color: black;
-    font-size: 15px;
-    text-align: left;
-    margin: 0 auto 5px auto;
-  } */
-
-
-  .point {
-    text-align: center;
-    font-weight: bold;
-    color: #0f2350;
-    font-size: 20px;
-    font-family: 'Kaisei Decol', serif;
-    margin: 50px auto;
-  }
-  
-
-  /* 予約フォーム */
-  /* 送信ボタン */
-  .btn {
-    background: #0f2350;
-    border-radius: 3px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 280px;
-    padding: 10px 20px;
-    color: #FFF;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  .btn:hover  {
-    background: #FFF;
-    color: #0f2350;
-  }
-  
-  .btn:after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    border-radius: 1px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .btn:hover:after {
-    border-color: #0f2350;
-  }
+/* 予約フォーム */
+#wpforms {
+  margin: 10px;
+}
 
 /* フッター */
 footer {
   background-color: #0f2350;
 }
 
-
 #shop_name {
-  color: aliceblue;
+  color: #f0f8ff;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Kaisei Decol', serif;
 }
 
 .shop_info {
-  color: aliceblue;
+  color: #f0f8ff;
 }
 
 /* コピーライト */
@@ -146,10 +72,32 @@ footer {
   text-align: center;
 }
 
+/* 投稿ページ */
+/* 送信ボタン */
+.btn a {
+  display: flex;
+  justify-content: space-around;
+  background: #0f2350;
+  border-radius: 3px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 20px;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  text-decoration: none;
+  color: #f0f8ff !important;
+}
+  
+.btn a:hover  {
+  background: #F1A444;
+  color: #0f2350;
+}
 
 /* ここまでが共通スタイル */
 
-/* PC用スタイル */
+
+/* ここからPC用スタイル */
 @media screen and (min-width: 768px) {
   main {
     max-width: 1080px;
@@ -219,42 +167,32 @@ footer {
     margin: 100px auto 30px auto;
   }
 
-  p {
-    color: black;
-    font-size: 15px;
-  }
-
-  .plans {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto 20px auto;
-  }
-
   /* レンタルプラン一覧 */
   .plan_list {
     display: flex;
     justify-content:space-between;
     font-weight: bold;
+    margin: auto 10px;
+    color: #0f2350;
+    font-size: 15px;
+    text-align: center;
   }
 
-  .plan_title {
-    color: #0f2350;
-    font-size: 20px;
+  .plan_name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
     font-family: 'Kaisei Decol', serif;
   }
 
-
-  .plan_title > a {
-    text-decoration: none;
-    color: #f0f8ff;
-    font-size: 20px;
-    margin: 30px;
+  .plan_name a {
     position: relative;
     display: inline-block;
     transition: .3s;
+    text-decoration: none;
   }
 
-  .plan_title > a::after {
+  .plan_name a::after {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -266,6 +204,23 @@ footer {
     transform: translateX(-50%);
   }
 
+  .plan_name a:hover::after {
+    width: 95%;
+  }
+
+  a:visited {
+    color: #0f2350;
+  }
+
+  .point {
+    text-align: center;
+    font-weight: bold;
+    color: #0f2350;
+    font-size: 20px;
+    font-family: 'Kaisei Decol', serif;
+    margin: 50px auto;
+  }
+
   /* レンタルの流れ */
   .flow_title {
     color: #0f2350;
@@ -275,6 +230,7 @@ footer {
     margin: 20px 0 0 0;
     border-bottom:1px solid #0f2350;
     width: 20%;
+    font-family: 'Kaisei Decol', serif;
   }
 
   .flow_title::before {
@@ -283,7 +239,6 @@ footer {
     color: #0f2350;
     font-size: 30px;
     font-family: 'Kaisei Decol', serif;
-    border-bottom:1px solid;
   }
 
   .flow_text {
@@ -320,86 +275,6 @@ footer {
     width: 100%;
   }
 
-
-  /* 予約フォーム */
-  /* label {
-    color: black;
-    font-size: 18px;
-    text-align: left;
-  } */
-
-  /* 外枠 */
-  /* #reservation > form > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-  } */
-
-  /* 左列の見出し */
-  /* .reserve_heading {
-      width: 240px; 
-      align-self: center;
-  } */
-
-  /* 見出しのラベル */
-  /* .reserve_label {
-    font-weight: bold;
-  } */
-
-  /* 必須 */
-  /* .reserve_span {
-    font-size: 14px;;
-    color: #ce2222;
-    margin: 0 0 0 20px;
-  } */
-
-  /* テキストボックス */
-  /* .reserve_container {
-    display: flex;
-    justify-content: space-between;
-  } */
-
-  /* .reserve_textbox {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-width: 1px;
-    border-bottom-color: #6D7E9F;
-    border-bottom-style: solid;
-    background-color: #F5F5F5;
-    width: 400px;
-    height: 56px;
-  } */
-
-  /* セレクトボックス */
-  /* select {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-width: 1px;
-    border-bottom-color: #6D7E9F;
-    border-bottom-style: solid;
-    background-color: #F5F5F5;
-    width: 400px;
-    height: 56px;
-  } */
-
-  /* お問い合わせ・ご要望のテキストエリア */
-  /* .reserve_textarea {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-width: 1px;
-    border-bottom-color: #6D7E9F;
-    border-bottom-style: solid;
-    background-color: #F5F5F5;
-    width: 400px;
-    height: 200px;
-  } */
-
-
-
   /* ギャラリー */
   #gallery_container {
     margin: 0;
@@ -414,19 +289,18 @@ footer {
   }
 
   #gallery_item img{
-    width: 33%; /* 画像を半分の幅にする */
-    /* box-sizing: border-box; ボーダーボックスモデルを使用して、幅にボーダーや余白も含める */
+    width: 33%;
+    box-sizing: border-box;
   }
 
   #insta {
     padding: 10px auto;
-    color: black;
+    color: #0f2350;
     text-align: right;
   }
 
   #insta a {
     font-size: 20px;
-    color: black;
     text-decoration: none;
     text-align: right;
     position: relative;
@@ -515,45 +389,13 @@ footer {
     margin: auto auto auto 25px;
   }
 
-
   .post_note {
     font-size: 20px;
-    margin: 50px auto 20px auto;
+    margin: 50px auto 50px auto;
   }
 
 }
-
-/* confirmページ */
-/* #btn_set {
-  display: flex;
-  justify-content: center;
-  margin: 50px ;
-}
-
-.confirm_table {
-  width: 100%;
-  text-align: center;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.confirm_table th {
-  padding: 10px;
-  background: #0f2350;
-  border: solid 1px #666666;
-  color: #ffffff
-}
-
-.confirm_table td {
-  padding: 10px;
-  border: solid 1px #0f2350;
-}
-
-.confirm_table td:first-child {
-  background: #F5F5F5;
-} */
-
-
+/* ここまでPC画面表示 */
 
 
 /* スマホ画面表示 */
@@ -561,6 +403,7 @@ footer {
   body {
     min-width: 375px;
     margin: 0;
+    box-sizing: border-box;
   }
 
   /* PC用ナビゲーション非表示 */
@@ -570,13 +413,12 @@ footer {
 
   /* ハンバーガーメニュー */
   #menu_sp {
-    aspect-ratio: 1 / 1; /* ハンバーガーメニューのアイコンが縦長になる… */
+    height: 50px;
     float: right;
-    margin: 0;
   }
 
-   /* スマホ用ナビゲーションの表示切替 */
-   /* 初期状態、レイアウトと非表示設定 */
+  /* スマホ用ナビゲーションの表示切替 */
+  /* 初期状態、レイアウトと非表示設定 */
   #nav_sp {
     background-color: #0f2350;
     position: absolute;
@@ -588,13 +430,13 @@ footer {
     z-index: 100;
   }
 
-   /* ×ボタン */
-    #close {
-      position: absolute;
-      margin: auto;
-      top: 20px;
-      right: 20px;
-    }
+  /* ×ボタン */
+  #close {
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    right: 20px;
+  }
   
   /* ナビゲーションメニュー用ロゴ */
     #logo_sp {
@@ -606,17 +448,17 @@ footer {
     display: block;
   }
   #nav_sp > a:link {
-    color: #ffffff;
+    color: #f0f8ff;
   }
   #nav_sp > a:visited {
-    color: #ffffff;
+    color: #f0f8ff;
   }
   #nav_sp > a:hover {
-    color: #ffffff;
+    color: #f0f8ff;
     text-decoration: underline;
   }
   #nav_sp > a:active {
-    color: #ffffff;
+    color: #f0f8ff;
   }
   #nav_sp > .menu {
     text-decoration: none;
@@ -629,10 +471,18 @@ footer {
     background-position: right top;
   }
 
+  /* メイン画像下のセールスポイント */
+  #main_text {
+    color: #F1A444;
+    font-size: 14px;
+    margin: 20px 10px 0 10px;
+    font-family: 'Kaisei Decol', serif;
+  }
+
   /* タイトル文字 */
   .title {
     color: #0f2350;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     padding: 1px 2px;
     border-left: 2px solid #F1A444;
@@ -640,32 +490,44 @@ footer {
     font-family: 'Kaisei Decol', serif;
     margin: 100px 10px 30px 10px;
   }
-  
+
   p {
     color: black;
     font-size: 15px;
     margin: auto 10px;
   }
 
-    /* レンタルプラン一覧 */
-    .plan_list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 20px 10px;
-    }
-
-  /* レンタルプラン一覧  */
-  /* .plans {
+  /* レンタルプラン一覧 */
+  .plan_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px auto ;
+    margin: 20px 10px;
   }
-  
-  .plan {
-    margin: 20px auto ;
-  } */
+
+  .plan_name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f2350;
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: 'Kaisei Decol', serif;
+  }
+
+  a:visited {
+    color: #0f2350;
+  }
+
+  .point {
+    text-align: center;
+    font-weight: bold;
+    color: #0f2350;
+    font-size: 15px;
+    font-family: 'Kaisei Decol', serif;
+    margin: 50px auto;
+  }
+
+
 
   /* レンタルの流れ */
   .flow_title {
@@ -673,23 +535,24 @@ footer {
     font-weight: bold;
     font-size: 20px;
     text-align: left;
-    margin: 20px 0 0 10px;
+    margin: 20px 10px 0 10px;
     border-bottom:1px solid #0f2350;
+    font-family: 'Kaisei Decol', serif;
+    width: 40%;
   }
 
   .flow_title::before {
     content: attr(data-number);
     margin: 0 10px 0 10px;
     color: #0f2350;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Kaisei Decol', serif;
-    border-bottom:1px solid;
 
   }
 
   .flow_text {
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
     margin: auto 10px;
   }
@@ -721,86 +584,6 @@ footer {
     width: 100%;
   }
 
-
-
-    /* 予約フォーム */
-    /* label {
-      color: black;
-      font-size: 18px;
-      text-align: left;
-    } */
-  
-    /* 外枠 */
-    /* #reservation > form > div {
-      /* display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; 
-      padding-bottom: 30px;
-    }
-   */
-    /* 左列の見出し */
-    /* .reserve_heading {
-      align-self: center;
-    } */
-  
-    /* 見出しのラベル */
-    /* .reserve_label {
-      font-weight: bold;
-    } */
-  
-    /* 必須 */
-    /* .reserve_span {
-      font-size: 14px;;
-      color: #ce2222;
-      margin: 0 0 0 20px;
-    } */
-  
-    /* テキストボックス */
-    /* .reserve_container {
-      margin: 20px 10px;
-    } */
-  
-    /* .reserve_textbox {
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom-width: 1px;
-      border-bottom-color: #6D7E9F;
-      border-bottom-style: solid;
-      background-color: #F5F5F5;
-      width: 100%;
-      height: 56px;
-    } */
-  
-    /* セレクトボックス */
-    /* select {
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom-width: 1px;
-      border-bottom-color: #6D7E9F;
-      border-bottom-style: solid;
-      background-color: #F5F5F5;
-      width: 100%;
-      height: 56px;
-    }
-   */
-    /* お問い合わせ・ご要望のテキストエリア */
-    /* .reserve_textarea {
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-      border-bottom-width: 1px;
-      border-bottom-color: #6D7E9F;
-      border-bottom-style: solid;
-      background-color: #F5F5F5;
-      width: 100%;
-      height: 200px;
-    }
-   */
-
-
-
   /* ギャラリー */
   #gallery_item {
     display: flex;
@@ -809,7 +592,7 @@ footer {
   }
   
   .gallery_sp {
-    margin: 20px 10px;
+    margin: 5px 10px;
   }
 
   #insta {
@@ -831,6 +614,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin: 60px 0 0 0 ;
+    box-sizing: border-box;
   }
 
   #info {
@@ -838,7 +622,83 @@ footer {
   }
 
   #map {
-    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* 比率を4:3に固定 */
+  }
+
+  /* Google Mapのiframe */
+  #map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  /* 投稿ページ */
+  .post_plan {
+    min-width: 375px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .wp-image-143 {
+    padding: 10px;
+  }
+
+  .post_catch{
+    font-size: 15px;
+    font-weight: bold;
+    color: #0f2350;
+    margin: 20px auto auto 10px;
+  }
+
+  .wp-block-heading {
+    color: #0f2350;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px 2px;
+    border-left: 2px solid #F1A444;
+    border-top: 2px solid #F1A444;
+    font-family: 'Kaisei Decol', serif;
+    margin: auto 10px 20px 10px;
+  }
+
+  .post_img {
+    margin: 10px;
+  }
+
+  .price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ce2222;
+  } 
+
+  .post_set {
+    color: #0f2350;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Kaisei Decol', serif;
+  }
+
+  .post_set_color {
+    background-color: #fbe5cb;
+    width: 100%;
+    padding: auto;
+    margin: 10px;
+  }
+
+  .post_content {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .post_note {
+    margin: 10px 10px 30px 10px;
+    font-size: 15px;
   }
 
 }
+/* ここまでスマホ画面表示 */
