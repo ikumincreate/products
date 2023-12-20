@@ -27,10 +27,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 
+<!-- slickをCDN経由で読み込む -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 <?php wp_head(); ?>
 </head>
 
-<body>
+</body>
 
 <!-- PC用ナビゲーション -->
   <nav id="nav_pc">

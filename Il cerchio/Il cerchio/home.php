@@ -7,9 +7,11 @@
     </div>
     <div class="main_inner">
     <!-- TODO プラグインMeta Sliderで1枚ずつスライド表示させる -->
-    <img src="<?php echo get_template_directory_uri(); ?>/images/main1.png" alt="メイン画像　ピザ" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/main2.png" alt="メイン画像　お店の外観" />
-    <img src="<?php echo get_template_directory_uri(); ?>/images/main3.png" alt="メイン画像　ワインと肉料理" />
+      <ul class="slider">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/main1.png" class="main_img" alt="メイン画像　ピザ" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/main2.png" class="main_img" alt="メイン画像　お店の外観" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/main3.png" class="main_img" alt="メイン画像　ワインと肉料理" />
+      </ul>
     </div>
   </div>
 
@@ -22,13 +24,12 @@
   </section>
 
   <!-- 店内の写真 -->
-  <img src="<?php echo get_template_directory_uri(); ?>/images/bistro.png" alt="お店の店内" />
+  <img src="<?php echo get_template_directory_uri(); ?>/images/bistro.png" id="shop_photo" alt="お店の店内" />
 
   <!-- メニュー -->
   <section id="menu">
     <div class="section_title">Menu</div>
     <!-- TODO メニューはプラグインtablepress　or RESTAURANT MENUにする -->
-
     Antipasto…前菜<br>
     ・十勝牧場のモッツアレラチーズとトマトのカプレーゼ<br>
     ・サーモンのカルパッチョ<br>

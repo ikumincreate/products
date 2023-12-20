@@ -7,49 +7,60 @@ Author: IKUMI KOJIMA
 Author URI: https://www.Ilcerchio.net/
  */
 
-body {
-  font-family: 'Kaisei Decol', serif;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Sawarabi Gothic', sans-serif;
-  background-color: #130500;
-  color: #FFFBF8;
+
+  body {
+    font-family: 'Kaisei Decol', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    background-color: #130500;
+    color: #FFFBF8;
+  }
+
+  /* メイン画像と店名 */
+  .main_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main_inner {
+    flex-basis:50%
+  }
+
+  .main_img {
+    width: 80%;
+  }
+
+  /* slick */
+  .slider {
+  /* ul要素の不要なパディングを削除する */
+  padding: 0;
 }
 
-/* メイン画像と店名 */
-.main_container {
-  display: flex;
-  /* justify-content: space-between; */
-}
+  #shop_name {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 50px;
+  }
 
-.main_inner {
-  
-}
-
-#shop_name {
-  font-family: 'BIZ UDPGothic', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Kiwi Maru', serif;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Pattaya', sans-serif;
-  font-size: 50px;
-}
-
-#shop_name >span {
-  font-size: 20px;
-}
+  #shop_name >span {
+    font-size: 20px;
+  }
 
 
-.main_img {
-  width: 60%;
-  text-align: right;
-}
+  .section_title {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 50px;
+  }
 
-.section_title {
-  font-family: 'BIZ UDPGothic', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Kiwi Maru', serif;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Pattaya', sans-serif;
-  font-size: 50px;
-}
+  /* 店内の写真 */
+  #shop_photo {
+    
+  }
