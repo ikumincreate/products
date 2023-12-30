@@ -10,7 +10,6 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
 
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
-  <link href="<?php echo get_template_directory_uri(); ?>/plugins/font-awesome-4.7.0/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,13 +40,9 @@
 
   <!-- スマホ用ナビゲーションメニュー -->
   <img id="menu_sp" src="<?php echo get_template_directory_uri(); ?>/images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav_sp').style.display = 'block'">
-  <!-- <img id="menu_sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav_sp').style.display = 'block'"> -->
   <nav id="nav_sp">
-    <img id="close" src="<?php echo get_template_directory_uri(); ?>/images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav_sp').style.display = 'none'">
-    <!-- <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav_sp').style.display = 'none'"> -->
-    <a id="logo_sp" href="index.php" onclick="document.getElementById('nav_sp').style.display = 'none'">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" alt="トップページに戻る" />
-      <!-- <img src="images/logo.png" alt="トップページに戻る"></a> -->
+    <a id="close" onclick="document.getElementById('nav_sp').style.display = 'none'"><img src="<?php echo get_template_directory_uri(); ?>/images/button-close.png" alt="ナビゲーションを閉じる" />
+    <a id="logo_sp" href="index.php" onclick="document.getElementById('nav_sp').style.display = 'none'"><img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" alt="トップページに戻る" />
 
     <a class="menu" href="index.php#rental_plan"
       onclick="document.getElementById('nav_sp').style.display = 'none'">レンタルプラン</a>

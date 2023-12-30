@@ -98,10 +98,10 @@ footer {
 
 
 /* ここからPC用スタイル */
-@media screen and (min-width: 768px) {
+@media screen and (min-width:930px) {
   main {
     max-width: 1080px;
-    min-width: 768px;
+    min-width: 930px;
     margin: 0 auto 0 auto;
   }
 
@@ -301,11 +301,16 @@ footer {
 
   #insta a {
     font-size: 20px;
+    color: #0f2350;
     text-decoration: none;
     text-align: right;
     position: relative;
     display: inline-block;
     transition: .3s;
+  }
+
+  #insta a:link {
+    color: #0f2350;
   }
 
   #insta a::after {
@@ -324,7 +329,6 @@ footer {
     width: 100%;
   }
 
-
   /* フッター */
   /* アクセス */
   #container {
@@ -332,6 +336,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 60px 0 0 0 ;
+  }
+
+  #access_sp {
+    display: none;
   }
 
   #map {
@@ -399,7 +407,7 @@ footer {
 
 
 /* スマホ画面表示 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 930px) {
   body {
     min-width: 375px;
     margin: 0;
@@ -434,7 +442,7 @@ footer {
   #close {
     position: absolute;
     margin: auto;
-    top: 20px;
+    top: 50px;
     right: 20px;
   }
   
@@ -512,6 +520,13 @@ footer {
     margin: 20px 0;
     text-decoration: none;
     font-family: 'Kaisei Decol', serif;
+  }
+
+  .plan_name a {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    text-decoration: none;
   }
 
   a:visited {
@@ -608,17 +623,23 @@ footer {
     text-align: center;
   }
 
-  /* アクセス */
-  #access {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 60px 0 0 0 ;
-    box-sizing: border-box;
+  #insta a:link {
+    color: #0f2350;
   }
 
-  #info {
-    margin: 20px 10px;
+  /* アクセス */
+  #access_sp {
+    font-size: 20px;
+    color: #f0f8ff;
+    font-family: 'Kaisei Decol', serif;
+    margin: auto 10px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   #map {
@@ -626,6 +647,7 @@ footer {
     width: 100%;
     height: 0;
     padding-top: 75%; /* 比率を4:3に固定 */
+    margin: 10px auto;
   }
 
   /* Google Mapのiframe */
