@@ -27,10 +27,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 
-<!-- slickをCDN経由で読み込む -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
 <?php wp_head(); ?>
 </head>
 
@@ -38,14 +34,31 @@
 
 <!-- PC用ナビゲーション -->
   <nav id="nav_pc">
-    <a href="">Top</a>
-    <a href="">About</a>
-    <a href="">Menu</a>
-    <a href="">Reservation</a>
-    <a href="">Blog</a>
-    <a href="">Access</a>
+    <a href="<?php echo home_url(); ?>" class="nav_item">Top</a>
+    <a href="<?php echo home_url(); ?>#about" class="nav_item">About</a>
+    <a href="<?php echo home_url(); ?>#menu" class="nav_item">Menu</a>
+    <a href="<?php echo home_url(); ?>#reservation" class="nav_item">Reservation</a>
+    <a href="<?php echo home_url(); ?>#blog" class="nav_item">Blog</a>
+    <a href="<?php echo home_url(); ?>#access" class="nav_item">Access</a>
   </nav>
 
-  <!-- TODO SP用navi -->
-  <!-- TODO ハンバーガーメニューを自作する -->
+<!-- スマホ用ナビゲーションメニュー -->
+  <img id="menu_sp" src="<?php echo get_template_directory_uri(); ?>/images/sp_navi.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav_sp').style.display = 'block'">
+  <nav id="nav_sp">
+    <img id="close" src="<?php echo get_template_directory_uri(); ?>/images/sp_close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav_sp').style.display = 'none'">
+    <a id="logo_sp" href="index.php" onclick="document.getElementById('nav_sp').style.display = 'none'">
+
+    <div id="nav_container">
+      <a class="menu" href="index.php#about"
+        onclick="document.getElementById('nav_sp').style.display = 'none'">About</a>
+      <a class="menu" href="index.php#menu"
+        onclick="document.getElementById('nav_sp').style.display = 'none'">Menu</a>
+      <a class="menu" href="index.php#reservation"
+        onclick="document.getElementById('nav_sp').style.display = 'none'">Reservation</a>
+      <a class="menu" href="index.php#blog"
+        onclick="document.getElementById('nav_sp').style.display = 'none'">Blog</a>
+      <a class="menu" href="index.php#access"
+        onclick="document.getElementById('nav_sp').style.display = 'none'">Access</a>
+    </div>
+  </nav>
 

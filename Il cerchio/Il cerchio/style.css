@@ -8,59 +8,367 @@ Author URI: https://www.Ilcerchio.net/
  */
 
 
+body {
+  font-family: 'Kaisei Decol', serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  background-color: #130500;
+  color: #FFFBF8;
+}
+
+p {
+  margin: auto 100px;
+}
+
+/* PCナビゲーションメニュー */
+#nav_pc {
+  text-align: right;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+#nav_pc > a {
+  text-decoration: none;
+  color: #FFFBF8;
+  display: inline-block;
+	padding: 0.3em;
+	transition: .3s;
+	transform: scale(1);
+}
+
+#nav_pc > a:hover{
+  color : #f84c39;
+  transform: scale(1.1);
+}
+
+#nav_pc > a::after {
+  text-decoration: none;
+  color: #FFFBF8;
+}
+
+.nav_item {
+  margin: auto 10px;
+}
+
+/* メイン画像と店名 */
+.main_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_shopname {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 50px;
+  margin: 300px 100px auto 100px;
+}
+
+.main_shopname > span {
+  font-size: 25px;
+}
+
+.section_title {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 50px;
+  margin: 100px 100px 10px 100px;
+}
+
+/* 店の紹介文 */
+#about_content {
+  margin: 400px auto;
+  text-align: center;
+}
+
+/* 店内の写真 */
+#shop_photo {
+  text-align: center;
+  margin: auto auto 300px auto;
+}
+
+/* メニュー */
+.menu_list {
+  margin: auto 100px;
+}
+
+.menu_img {
+  margin: auto 100px;
+}
+
+/* 予約 */
+#reserve_link {
+  font-size: 20px;
+  margin: auto 100px;
+}
+
+#reserve_link a {
+  text-decoration: none;
+  color: #FFFBF8;
+  font-weight: bold;
+  display: inline-block;
+	padding: 0.3em;
+	transition: .3s;
+	transform: scale(1);
+}
+
+#reserve_link > a:hover{
+  color : #f84c39;
+  transform: scale(1.1);
+}
+
+/* ブログ表示 */
+.blog_list {
+  margin: auto 100px;
+}
+
+.blog_list a {
+  text-decoration: none;
+  display: inline-block;
+	padding: 0.3em;
+	transition: .3s;
+	transform: scale(1);
+}
+
+.blog_list > a:hover{
+  color : #f84c39;
+  transform: scale(1.1);
+}
+
+.blog_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.blog_title {
+  font-size: 20px;
+  color: #FFFBF8;
+}
+
+.blog_date {
+  color: #FFFBF8;
+}
+
+.blog_words {
+  color: #FFFBF8;
+}
+
+
+/* TO DO 画像サイズの調整をする */
+/* .blog_img {
+  width: 20%;
+  height: auto;
+} */
+
+
+/* フッター */
+.access_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 500px 100px auto 100px;
+}
+
+.access_map {
+
+}
+
+#access_shopname {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 50px;
+}
+
+#access_shopname > span {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 20px;
+}
+
+#copy {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* ブログの各ページ */
+/* TODO 配置調整 */
+.article_title {
+
+}
+
+.article_thumbnail {
+
+}
+
+.article_content {
+
+}
+
+
+/* PC画面表示 */
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 1500px;
+    min-width: 768px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* スマホナビゲーションの非表示 */
+  #menu_sp {
+    display: none;
+  }
+
+  #nav_sp {
+    display: none;
+  }
+}
+
+/* スマホ画面表示 */
+@media screen and (max-width: 767px) {
   body {
-    font-family: 'Kaisei Decol', serif;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Sawarabi Gothic', sans-serif;
-    background-color: #130500;
-    color: #FFFBF8;
+    min-width: 375px;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   /* メイン画像と店名 */
-  .main_container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .main_inner {
-    flex-basis:50%
-  }
-
   .main_img {
-    width: 80%;
+    position: relative;
   }
-
-  /* slick */
-  .slider {
-  /* ul要素の不要なパディングを削除する */
-  padding: 0;
-}
-
-  #shop_name {
+  .main_shopname {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-family: 'BIZ UDPGothic', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Kiwi Maru', serif;
     font-family: 'M PLUS 1p', sans-serif;
     font-family: 'Pattaya', sans-serif;
-    font-size: 50px;
-  }
-
-  #shop_name >span {
     font-size: 20px;
   }
 
-
-  .section_title {
-    font-family: 'BIZ UDPGothic', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Kiwi Maru', serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'Pattaya', sans-serif;
-    font-size: 50px;
+  .main_shopname > span {
+    font-size: 15px;
   }
+
+  /* PC用ナビゲーション非表示 */
+  #nav_pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu_sp {
+    height: 50px;
+    float: right;
+  }
+
+  /* スマホ用ナビゲーションの表示切替 */
+  /* 初期状態、レイアウトと非表示設定 */
+  #nav_sp {
+    background-color: #130500;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+    color: #FFFBF8;
+    font-size: 15px;
+  }
+
+  /* ×ボタン */
+  #close {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    right: 5px;
+  }
+
+  #nav_container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+  }
+
+  .menu {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFBF8;
+    text-decoration: none;
+    margin: 20px 0 0 5px;
+  }
+
 
   /* 店内の写真 */
-  #shop_photo {
-    
+  #shop_photo > img {
+    text-align: center;
+    width: 100vw;
   }
+
+  /* ブログ */
+  .blog_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog_title {
+    font-size: 15px;
+    color: #FFFBF8;
+  }
+
+  .blog_date {
+    color: #FFFBF8;
+  }
+
+  .blog_words {
+    color: #FFFBF8;
+  }
+
+  /* フッター */
+.access_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.access_map {
+
+}
+
+#access_shopname {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 30px;
+}
+
+#access_shopname > span {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 15px;
+}
+
+#copy {
+  font-size: 10px;
+  text-align: center;
+  margin: 10px auto;
+}
+}
