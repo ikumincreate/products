@@ -3,7 +3,8 @@
   <!-- トップ画像 -->
   <div class="main_container">
     <div class="main_shopname">
-      <span>trattoria<br></span>Il cerchio
+      <!-- <span>trattoria<br></span>Il cerchio -->
+      <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="Il cerchio" />
     </div>
     <div class="main_img">
       <?php echo do_shortcode('[metaslider id="83"]'); ?>
@@ -30,10 +31,12 @@
   <!-- メニュー -->
   <section id="menu">
     <div class="section_title">Menu</div>
+      <!-- メニューリストの表示 -->
       <div class="menu_list">
         <?php echo do_shortcode('[fdm-menu id="37"]'); ?>
       </div>
       
+      <!-- メニューの画像の表示 -->
       <div class="menu_img">
         <?php echo do_shortcode('[metaslider id="87"]'); ?>
       </div>
@@ -79,30 +82,32 @@
               </div>
               <div class="news_post_small_title">
                 <!--  aタグで投稿記事へのリンクを作成する -->
-              <div class="blog_container">
-                <div class="blog_inner">
-                  <a href="<?php the_permalink(); ?>">
-                    <!--  投稿記事のタイトルを表示する -->
-                    <div class="blog_title">
-                      <?php the_title(); ?>
-                    </div>
-                    <!-- 投稿記事の日付を表示する -->
-                    <div class="blog_date">
-                      <?php echo get_the_date(); ?>
-                    </div>
-                    <!-- 投稿記事の本文の一部を表示する -->
-                    <div class="blog_words">
-                      <?php echo wp_trim_words( get_the_content() , 30, '...'); ?>
-                    </div>
-                </div>
-                <div class="blog_inner">
+                <div class="blog_container">
+                  <div class="blog_inner">
+                    <a href="<?php the_permalink(); ?>">
+                      <!--  投稿記事のタイトルを表示する -->
+                      <div class="blog_title">
+                        <?php the_title(); ?>
+                      </div>
+                      <!-- 投稿記事の日付を表示する -->
+                      <div class="blog_date">
+                        <?php echo get_the_date(); ?>
+                      </div>
+                      <!-- 投稿記事の本文の一部を表示する -->
+                      <div chlas="blog_words">
+                        <?php echo wp_trim_words( get_the_content() , 30, '...'); ?>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_inner">
                     <!-- 投稿記事のアイキャッチ画像を表示する -->
-                    <div class="blog_img">
-                      <?php the_post_thumbnail(); ?>
+                    <div>
+                      <div class="blog_img">
+                        <?php the_post_thumbnail(); ?>
+                      </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>  
