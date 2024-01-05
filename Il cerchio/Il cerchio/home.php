@@ -25,8 +25,9 @@
 
   <!-- 店内の写真 -->
   <div id="shop_photo">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/bistro.jpg"  alt="お店の店内" />
+      <img src="<?php echo get_template_directory_uri(); ?>/images/bistro.jpg"  alt="お店の店内" />
   </div>
+
 
   <!-- メニュー -->
   <section id="menu">

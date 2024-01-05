@@ -21,6 +21,10 @@ p {
   margin: auto 100px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* PCナビゲーションメニュー */
 #nav_pc {
   text-align: right;
@@ -374,7 +378,6 @@ p {
   /* 店内の写真 */
   #shop_photo > img {
     text-align: center;
-    width: 100vw;
   }
 
   /* ブログ */
