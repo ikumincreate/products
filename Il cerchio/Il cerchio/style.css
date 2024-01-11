@@ -59,7 +59,7 @@ img {
 .main_container {
   display: flex;
   justify-content: space-between;
-  height: 100vw;
+  height: 100vw !important;
 }
 
 .main_shopname {
