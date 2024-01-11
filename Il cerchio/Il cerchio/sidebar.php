@@ -3,7 +3,7 @@
   <ul>
     <?php
       $args = array(
-        'posts_per_page' => 4 //表示件数の指定
+        'posts_per_page' => 20 //表示件数の指定
       );
       $posts = get_posts( $args );
       foreach ( $posts as $post ): //ループの開始

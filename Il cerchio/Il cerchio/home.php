@@ -3,15 +3,12 @@
   <!-- トップ画像 -->
   <div class="main_container">
     <div class="main_shopname">
-      <!-- <span>trattoria<br></span>Il cerchio -->
-      <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="Il cerchio" />
+      <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="お店の店内" />
     </div>
     <div class="main_img">
-      <?php echo do_shortcode('[metaslider id="83"]'); ?>
+      <?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
     </div>
   </div>
-
-
 <main>
   <!-- 店の紹介文 -->
   <section id="about">
@@ -39,7 +36,7 @@
       
       <!-- メニューの画像の表示 -->
       <div class="menu_img">
-        <?php echo do_shortcode('[metaslider id="87"]'); ?>
+        <?php echo do_shortcode('[smartslider3 slider="5"]'); ?>
       </div>
   </section>
 
@@ -85,6 +82,14 @@
                 <!--  aタグで投稿記事へのリンクを作成する -->
                 <div class="blog_container">
                   <div class="blog_inner">
+                      <!-- 投稿記事のアイキャッチ画像を表示する -->
+                      <div>
+                        <div class="blog_img">
+                          <?php the_post_thumbnail(); ?>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="blog_inner">
                     <a href="<?php the_permalink(); ?>">
                       <!--  投稿記事のタイトルを表示する -->
                       <div class="blog_title">
@@ -99,14 +104,6 @@
                         <?php echo wp_trim_words( get_the_content() , 30, '...'); ?>
                       </div>
                     </a>
-                  </div>
-                  <div class="blog_inner">
-                    <!-- 投稿記事のアイキャッチ画像を表示する -->
-                    <div>
-                      <div class="blog_img">
-                        <?php the_post_thumbnail(); ?>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

@@ -5,14 +5,14 @@
 
 <div class ="single_container">
   <div class ="single_inner">
-    <!-- タイトル読み込み -->
-    <div class="article_title">
-      <?php the_title(); ?></h1>
-    </div>
-
     <!-- 日付読み込み -->
     <div class="article_date">
       <?php echo get_the_date(); ?>
+    </div>
+
+    <!-- タイトル読み込み -->
+    <div class="article_title">
+      <?php the_title(); ?></h1>
     </div>
 
     <!-- アイキャッチ画像読み込み -->
@@ -29,7 +29,7 @@
   </div>
 
   <!-- サイドバー読み込み -->
-  <div class ="single_inner">
+  <div class ="single_sidebar">
     <?php get_sidebar(); ?>
   </div>
 </div>
