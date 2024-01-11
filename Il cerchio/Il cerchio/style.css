@@ -284,11 +284,11 @@ img {
 }
 
 /* タブレット画面表示 */
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 701px) and (max-width: 900px) {
   main {
     max-width: 900px;
     min-width: 701px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
   }
 
   .main_shopname {
@@ -318,6 +318,7 @@ img {
 /* スマホ画面表示 */
 @media screen and (max-width: 700px) {
   body {
+    max-width: 700px;
     min-width: 375px;
     margin: 0;
     box-sizing: border-box;
