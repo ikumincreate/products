@@ -7,7 +7,7 @@ Author: IKUMI KOJIMA
 Author URI: https://www.Ilcerchio.net/
  */
 
-
+/* 全画面共通 */
 body {
   font-family: 'Kaisei Decol', serif;
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -17,217 +17,23 @@ body {
   color: #FFFBF8;
 }
 
-p {
-  margin: auto 100px;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* PCナビゲーションメニュー */
-#nav_pc {
-  text-align: right;
-  font-size: 15px;
-  padding: 2px 10px;
-}
-
-#nav_pc > a {
-  text-decoration: none;
-  color: #FFFBF8;
-  display: inline-block;
-	padding: 0.3em;
-	transition: .3s;
-	transform: scale(1);
-}
-
-#nav_pc > a:hover{
-  color : #f84c39;
-  transform: scale(1.1);
-}
-
-#nav_pc > a::after {
-  text-decoration: none;
-  color: #FFFBF8;
-}
-
-.nav_item {
-  margin: auto 10px;
-}
-
-/* メイン画像と店名 */
-.main_container {
-  display: flex;
-  justify-content: space-between;
-  height: 100vh !important;
-}
-
-.main_shopname {
-  margin-left: 10px;
-  align-self: center;
-  flex-grow: 1;
-}
-
-.main_img {
-  flex-grow: 1;
-}
-
+/* セクションタイトルのフォント */
 .section_title {
   font-family: 'BIZ UDPGothic', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Kiwi Maru', serif;
   font-family: 'M PLUS 1p', sans-serif;
   font-family: 'Pattaya', sans-serif;
-  font-size: 50px;
-  margin: 100px 100px 10px 100px;
 }
 
-/* 店の紹介文 */
-#about_content {
-  margin: 400px auto;
-  text-align: center;
+img {
+  max-width: 100%;
 }
 
-/* 店内の写真 */
-#shop_photo {
-  text-align: center;
-  margin: auto auto 300px auto;
-}
-
-/* メニュー */
-.menu_list {
-  margin: auto 100px;
-}
-
-.menu_img {
-  margin: auto 100px;
-}
-
-/* 予約 */
-#reserve_link {
-  font-size: 20px;
-  margin: auto 100px;
-}
-
-#reserve_link a {
-  text-decoration: none;
-  color: #FFFBF8;
-  font-weight: bold;
-  display: inline-block;
-	padding: 0.3em;
-	transition: .3s;
-	transform: scale(1);
-}
-
-#reserve_link > a:hover{
-  color : #f84c39;
-  transform: scale(1.1);
-}
-
-/* ブログ表示 */
-.blog_list {
-  margin: auto 100px;
-}
-
-.blog_list a {
-  text-decoration: none;
-  display: inline-block;
-	padding: 0.3em;
-	transition: .3s;
-	transform: scale(1);
-}
-
-.blog_container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-}
-
-.blog_img > img {
-  width: 65%;
-  height: auto;
-}
-
-.blog_title {
-  font-size: 20px;
+/* 訪問済リンクの装飾 */
+a:visited{
   color: #FFFBF8;
 }
-
-.blog_date {
-  color: #FFFBF8;
-}
-
-.blog_words {
-  color: #FFFBF8;
-}
-
-/* TODO 装飾修正 */
-.blog_inner a:hover{
-  color : #f84c39;
-} 
-
-.blog_inner a {
-  text-decoration: none;
-  color: #FFFBF8;
-}
-
-
-
-/* フッター */
-.access_container {
-  display: flex;
-  justify-content: space-between;
-  margin: 100px 100px 10px 100px;
-}
-
-/* 横幅を指定するための要素 */
-.map_wrap {
-  width: 40%; /* ここに横幅を指定 */
-}
-
-/* Google Mapを囲う要素 */
-.access_map {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 75%; /* 比率を4:3に固定 */
-}
-
-/* Google Mapのiframe */
-.access_map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#copy {
-  font-size: 15px;
-  text-align: center;
-  margin: 10px auto;
-}
-
-/* ブログの各ページ */
-.article_title {
-  font-size: 30px;
-  margin: 0px 100px;
-}
-
-.article_date {
-  margin: auto 100px;
-}
-
-.articl_thumbnaile > img {
-  margin: 20px 100px;
-  width: 70%;
-  height: auto;
-}
-
-.article_content > p {
-  margin: auto 100px;
-}
-
 
 /* PC画面表示 */
 @media screen and (min-width: 901px) {
@@ -246,16 +52,211 @@ img {
     display: none;
   }
 
+  p {
+    margin: auto 100px;
+  }
+  
+  /* PCナビゲーションメニュー */
+  #nav_pc {
+    text-align: right;
+    font-size: 15px;
+    padding: 2px 10px;
+  }
+  
+  #nav_pc > a {
+    text-decoration: none;
+    color: #FFFBF8;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  #nav_pc > a:hover{
+    color : #f84c39;
+    transform: scale(1.1);
+  }
+  
+  #nav_pc > a::after {
+    text-decoration: none;
+    color: #FFFBF8;
+  }
+  
+  .nav_item {
+    margin: auto 10px;
+  }
+  
+  /* section top */
+  .main_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh !important;
+  }
+  
+  .main_shopname {
+    margin-left: 10px;
+    align-self: center;
+    flex-grow: 1;
+  }
+  
+  .main_img {
+    flex-grow: 1;
+  }
+  
+  .main_img img {
+    height: 100vh !important; 
+  }
+  
+/* 各セクションのタイトル */
+  .section_title {
+    font-size: 50px;
+    margin: 100px 100px 10px 100px;
+  }
+  
+  /* section about 店の紹介文 */
+  #about_content {
+    margin: 400px auto;
+    text-align: center;
+  }
+  
+  /* section about 店内の写真 */
+  #shop_photo {
+    text-align: center;
+    margin: auto auto 300px auto;
+  }
+  
+  /* section menu */
+  .menu_list {
+    margin: auto 100px;
+  }
+  
+  .menu_img {
+    margin: auto 100px;
+  }
+  
+  /* section reservation */
+  #reserve_link {
+    font-size: 20px;
+    margin: auto 100px;
+  }
+  
+  #reserve_link a {
+    text-decoration: none;
+    color: #FFFBF8;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  #reserve_link > a:hover{
+    color : #f84c39;
+    transform: scale(1.1);
+  }
+  
+  /* section blog */
+  .blog_list {
+    margin: auto 100px;
+  }
+  
+  .blog_list a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  .blog_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+  
+  .blog_img > img {
+    width: 95%;
+    height: auto;
+  }
+  
+  .blog_title {
+    font-size: 20px;
+  }
+  
+  .blog_inner a {
+    text-decoration: none;
+  }
+
+
+  
+  /* section access */
+  .access_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px 10px 100px;
+  }
+  
+  /* 横幅を指定するための要素 */
+  .map_wrap {
+    width: 40%; /* ここに横幅を指定 */
+  }
+  
+  /* Google Mapを囲う要素 */
+  .access_map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* 比率を4:3に固定 */
+  }
+  
+  /* Google Mapのiframe */
+  .access_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #copy {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  
+  /* ブログページ */
+  .article_title {
+    font-size: 30px;
+    margin: 0px 50px;
+  }
+  
+  .article_date {
+    margin: auto 50px;
+  }
+  
+  
+  .articl_thumbnaile > img {
+    margin: 20px 50px;
+    width: 550px;
+    height: auto;
+  }
+  
+  .article_content > p {
+    margin: auto 50px;
+  }
+  
+
+  /* サイドバー */
   .single_container {
     display: flex;
     justify-content: space-between;
     margin: 100px auto;
   }
 
-  /* サイドバー */
   .sidebar {
-    margin-right: 100px;
-    padding: 5px 20px; 
+    width: 200px;
+    margin-right: 50px;
+    padding: 5px 10px; 
   }
 
   .single_sidebar {
@@ -291,6 +292,40 @@ img {
     margin: 0 auto;
   }
 
+  p {
+    margin: auto 50px;
+  }
+
+  #nav_pc {
+    text-align: right;
+    font-size: 15px;
+    padding: 2px 10px;
+  }
+  
+  #nav_pc > a {
+    text-decoration: none;
+    color: #FFFBF8;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  #nav_pc > a:hover{
+    color : #f84c39;
+    transform: scale(1.1);
+  }
+  
+  #nav_pc > a::after {
+    text-decoration: none;
+    color: #FFFBF8;
+  }
+  
+  .nav_item {
+    margin: auto 10px;
+  }
+
+  /* topの店名を非表示 */
   .main_shopname {
     display: none;
   }
@@ -304,14 +339,181 @@ img {
     display: none;
   }
 
-  .single_container {
+  /* 各セクションのタイトル */
+  .section_title {
+    font-size: 50px;
+    margin: 100px 50px 10px 50px;
+  }
+  
+  /* section about 店の紹介文 */
+  #about_content {
+    margin: 400px auto;
+    text-align: center;
+  }
+  
+  /* section about 店内の写真 */
+  #shop_photo {
+    text-align: center;
+    margin: auto auto 300px auto;
+  }
+  
+  /* メニュー */
+  .menu_list {
+    margin: auto 100px;
+  }
+  
+  .menu_img {
+    margin: auto 100px;
+  }
+  
+  /* section reservation */
+  #reserve_link {
+    font-size: 20px;
+    margin: auto 100px;
+  }
+  
+  #reserve_link a {
+    text-decoration: none;
+    color: #FFFBF8;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  #reserve_link > a:hover{
+    color : #f84c39;
+    transform: scale(1.1);
+  }
+  
+  /* section blog */
+  .blog_list {
+    margin: auto 100px;
+  }
+  
+  .blog_list a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  .blog_container {
     display: flex;
     justify-content: space-between;
+    margin: 20px auto;
+  }
+  
+  .blog_img > img {
+    width: 95%;
+    height: auto;
+  }
+  
+  .blog_title {
+    font-size: 20px;
+    color: #FFFBF8;
+  }
+  
+  .blog_date {
+    color: #FFFBF8;
+  }
+  
+  .blog_words {
+    color: #FFFBF8;
+  }
+  
+  /* TODO 装飾修正 */
+  .blog_inner a:hover{
+    color : #f84c39;
+  } 
+  
+  .blog_inner a {
+    text-decoration: none;
+    color: #FFFBF8;
+  }
+  
+  /* section access */
+  .access_container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 50px 10px 50px;
+  }
+  
+  /* 横幅を指定するための要素 */
+  .map_wrap {
+    width: 40%; /* ここに横幅を指定 */
+  }
+  
+  /* Google Mapを囲う要素 */
+  .access_map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* 比率を4:3に固定 */
+  }
+  
+  /* Google Mapのiframe */
+  .access_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #copy {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+
+  /* ブログページ */
+  .article_title {
+    font-size: 30px;
+    margin: 0px 50px;
+  }
+  
+  .article_date {
+    margin: auto 50px;
+  }
+  
+  .articl_thumbnaile > img {
+    margin: 20px 50px;
+    width: 400px;
+    height: auto;
+  }
+
+  /* サイドバー */
+  .single_container {
+    display: flex;
+    flex-direction: column;
     margin: 100px auto;
   }
 
-  /* TODO フッターのアクセス状況の配置 */
+  .blog_title {
+    margin: 10px 50px auto 50px;
+    font-size: 15px;
+  }
+
+  .blog_title a {
+    color: #FFFBF8;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+  }
+
+  .sidebar_title {
+    margin: 100px 50px auto 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid #FFFBF8;
+  }
 }
+
 
 
 
@@ -324,7 +526,11 @@ img {
     box-sizing: border-box;
   }
 
-  /* メイン画像と店名 */
+  p {
+    margin: auto 10px;
+  }
+
+  /* section about */
   .main_img {
     position: relative;
   }
@@ -377,29 +583,83 @@ img {
     margin: 70px auto;
   }
 
-  .menu {
-    font-size: 25px;
-    font-weight: bold;
-    color: #FFFBF8;
-    text-decoration: none;
-    margin: 20px 0 0 5px;
+  #menu {
+    margin: 5px;
   }
 
 
-  /* 店内の写真 */
+  /* section about 店内の写真 */
   #shop_photo > img {
     text-align: center;
   }
 
-  /* ブログ */
+  /* 各セクションのタイトル */
+  .section_title {
+    font-size: 50px;
+    margin: 100px 5px 10px 5px;
+  }
+  
+  /* section about */
+  #about_content {
+    margin: 400px auto;
+    text-align: center;
+  }
+  
+  /* 店内の写真 */
+  #shop_photo {
+    text-align: center;
+    margin: auto auto 300px auto;
+  }
+  
+  /* section menu */
+  .menu_list {
+    margin: auto 5px;
+  }
+  
+  .menu_img {
+    margin: auto 5px;
+  }
+  
+  /* section reservation */
+  #reserve_link {
+    font-size: 20px;
+    margin: auto 5px;
+  }
+  
+  #reserve_link a {
+    text-decoration: none;
+    color: #FFFBF8;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3em;
+    transition: .3s;
+    transform: scale(1);
+  }
+  
+  #reserve_link > a:hover{
+    color : #f84c39;
+    transform: scale(1.1);
+  }
+
+  /* section blog */
   .blog_container {
     display: flex;
     flex-direction: column;
+    margin: 20px 5px auto 5px;
   }
 
   .blog_title {
     font-size: 15px;
+    font-weight: bold;
     color: #FFFBF8;
+  }
+
+  .blog_title a {
+    color: #FFFBF8;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: .5s;
   }
 
   .blog_date {
@@ -410,8 +670,55 @@ img {
     color: #FFFBF8;
   }
 
+  .blog_words a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+  }
+
+  /* section access */
+.access_container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 5px 10px 5px;
+}
+
+.access_map {
+
+}
+
+#copy {
+  font-size: 10px;
+  text-align: center;
+}
+
+  /* ブログページ */
+  .article_title {
+    font-size: 30px;
+    margin: 0px 5px;
+  }
+  
+  .article_date {
+    margin: auto 5px;
+  }
+  
+  .articl_thumbnaile > img {
+    margin: 20px 5px;
+    width: 360px;
+    height: auto;
+  }
+
+  /* サイドバー */
+  .sidebar_title {
+    margin: 100px 5px auto 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid #FFFBF8;
+  }
+
   .blog_title {
-    margin: 10px 100px auto 100px;
+    margin: 10px 5px;
     font-size: 15px;
   }
 
@@ -423,44 +730,4 @@ img {
     transition: .5s;
   }
 
-  .sidebar_title {
-    margin: 100px 100px auto 100px;
-    font-size: 18px;
-    font-weight: bold;
-    border-top: 1px solid #FFFBF8;
-  }
-
-  /* フッター */
-.access_container {
-  display: flex;
-  flex-direction: column;
-}
-
-.access_map {
-
-}
-
-#access_shopname {
-  font-family: 'BIZ UDPGothic', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Kiwi Maru', serif;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Pattaya', sans-serif;
-  font-size: 30px;
-}
-
-#access_shopname > span {
-  font-family: 'BIZ UDPGothic', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Kiwi Maru', serif;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Pattaya', sans-serif;
-  font-size: 15px;
-}
-
-#copy {
-  font-size: 10px;
-  text-align: center;
-  margin: 10px auto;
-}
 }

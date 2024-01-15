@@ -82,13 +82,11 @@
                 <!--  aタグで投稿記事へのリンクを作成する -->
                 <div class="blog_container">
                   <div class="blog_inner">
-                      <!-- 投稿記事のアイキャッチ画像を表示する -->
-                      <div>
-                        <div class="blog_img">
-                          <?php the_post_thumbnail(); ?>
-                        </div>
+                    <!-- 投稿記事のアイキャッチ画像を表示する -->
+                      <div class="blog_img">
+                        <?php the_post_thumbnail(); ?>
                       </div>
-                    </div>
+                  </div>
                   <div class="blog_inner">
                     <a href="<?php the_permalink(); ?>">
                       <!--  投稿記事のタイトルを表示する -->
