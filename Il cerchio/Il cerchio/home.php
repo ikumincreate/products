@@ -3,8 +3,8 @@
   <!-- トップ画像 -->
   <div class="main_container">
     <div class="main_shopname">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="お店の店内" />
-    </div>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="お店の店内" />
+      </div>
     <div class="main_img">
       <?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
     </div>
@@ -44,9 +44,9 @@
   <section id="reservation">
     <div class="section_title">Reservation</div>
     <p id="">食べログからネット予約が可能です</p>
-    <p id="reserve_link">
+    <div id="reserve_link">
       <a href="https://tabelog.com/">ご予約はこちらから</a>
-    </p>
+    </div>
     <p></p>
   </section>
 
@@ -81,11 +81,9 @@
               <div class="news_post_small_title">
                 <!--  aタグで投稿記事へのリンクを作成する -->
                 <div class="blog_container">
-                  <div class="blog_inner">
-                    <!-- 投稿記事のアイキャッチ画像を表示する -->
-                      <div class="blog_img">
-                        <?php the_post_thumbnail(); ?>
-                      </div>
+                  <!-- 投稿記事のアイキャッチ画像を表示する -->
+                  <div class="blog_img">
+                    <?php the_post_thumbnail(); ?>
                   </div>
                   <div class="blog_inner">
                     <a href="<?php the_permalink(); ?>">

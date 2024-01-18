@@ -9,7 +9,7 @@
       foreach ( $posts as $post ): //ループの開始
         setup_postdata( $post ); //記事データのセット
     ?>
-      <li class="blog_title">
+      <li class="sidebar_blog_title">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </li>
 
