@@ -6,9 +6,10 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/cerchio_logo.png"  alt="お店の店内" />
       </div>
     <div class="main_img">
-      <?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/main.png"  alt="お店の店内" />
     </div>
   </div>
+
 <main>
   <!-- 店の紹介文 -->
   <section id="about">
@@ -20,9 +21,10 @@
     </div>
   </section>
 
+
   <!-- 店内の写真 -->
   <div id="shop_photo">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/bistro.jpg"  alt="お店の店内" />
+    <?php echo do_shortcode('[smartslider3 slider="6"]'); ?>
   </div>
 
 
