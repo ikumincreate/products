@@ -12,11 +12,10 @@ body {
 
 .nav_item {
   color: #fefefe;
+  text-decoration: none;
+  margin-right: 15px;
 }
 
-.nav_item a {
-  text-decoration: none;
-}
 
 #menu_sp {
   display: none;
@@ -28,6 +27,9 @@ body {
 
 #nav_sp_container {}
 
+/* ****************** */
+/* index */
+/* ****************** */
 
 /* メインビジュアル */
 #main_container {
@@ -125,3 +127,35 @@ body {
 
 /* footer */
 #copyright {}
+
+/* ****************** */
+/* single */
+/* ****************** */
+.single_container {
+  height: 366px;
+  background-image:url(images/header.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.single_title {
+  color: #fefefe;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  text-align: center;
+}
+
+#nav_pc {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_item {
+  /* color: #fefefe; */
+  text-decoration: none;
+  margin-right: 15px;
+}
