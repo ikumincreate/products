@@ -1,0 +1,171 @@
+/* 全体共通 */
+body {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  color: #0c101a;
+}
+
+/* ナビゲーション */
+#nav_pc {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_item {
+  color: #fefefe;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+
+#menu_sp {
+  display: none;
+}
+
+#nav_sp {
+  display: none;
+}
+
+#nav_sp_container {}
+
+/* ****************** */
+/* index */
+/* ****************** */
+
+/* メインビジュアル */
+#main_container {
+  height: 100vh;
+  background-image:url(images/top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+#title {
+  color: #fefefe;
+  position: absolute;
+  top: 45%; 
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  padding: 20px;
+}
+
+.main_title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.main_subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* about us */
+.heading {
+  color: #485B7B;
+  font-size: 25px;
+}
+
+.lead {}
+
+#aboutus_containter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutus_inner {}
+
+.aboutus_heading {
+  color: #485B7B;
+  font-weight: bold;
+}
+
+.aboutus_lead {}
+
+
+/* plofile */
+#profile_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_inner {
+  width: 40vw;
+}
+
+#name {
+  color: #485B7B;
+  font-size: 20px;
+}
+
+.profile_heading {
+  color: #485B7B;
+}
+
+.profile_list {}
+
+
+/* topics&archive */
+#topic_archive_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic_archive_inner {
+
+}
+
+.topic_archive_item {}
+
+.topic_archive_title {}
+
+
+/* contact */
+
+
+
+
+/* footer */
+footer {
+  background-color: #485B7B;
+}
+
+#copyright {
+  color: #fefefe;
+  text-align: center;
+}
+
+
+/* ****************** */
+/* single */
+/* ****************** */
+.single_container {
+  height: 366px;
+  background-image:url(images/header.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.single_title {
+  color: #fefefe;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  text-align: center;
+}
+
+#nav_pc {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_item {
+  /* color: #fefefe; */
+  text-decoration: none;
+  margin-right: 15px;
+}
